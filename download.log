@@ -20,3 +20,64 @@
 2025-05-05 13:49:55,164 - INFO - Extraction réussie : Database\v2\HFC_MENAGE_ENABEL_2024_V1\export_job_35.zip
 2025-05-05 13:49:55,165 - INFO - Fichier zip supprimé : Database\v2\HFC_MENAGE_ENABEL_2024_V1\export_job_35.zip
 2025-05-05 13:49:55,166 - INFO - Tous les téléchargements tentés
+2025-05-05 14:01:49,641 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-05 14:01:49,641 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-05 14:01:49,642 - INFO -  * Restarting with stat
+2025-05-05 14:01:51,377 - WARNING -  * Debugger is active!
+2025-05-05 14:01:51,380 - INFO -  * Debugger PIN: 818-196-067
+2025-05-05 14:02:34,314 - INFO - 127.0.0.1 - - [05/May/2025 14:02:34] "GET / HTTP/1.1" 200 -
+2025-05-05 14:02:46,535 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1)
+2025-05-05 14:03:00,263 - INFO - Téléchargement réussi : Downloads\Base pour fusion\HFC_MENAGE_ENABEL_2024_V1\Menage_VF2_ENA2024_1_STATA_All.zip
+2025-05-05 14:03:00,367 - INFO - Extraction réussie : Downloads\Base pour fusion\HFC_MENAGE_ENABEL_2024_V1\Menage_VF2_ENA2024_1_STATA_All.zip
+2025-05-05 14:03:00,371 - INFO - 127.0.0.1 - - [05/May/2025 14:03:00] "[32mPOST /download HTTP/1.1[0m" 302 -
+2025-05-05 14:03:01,493 - INFO - 127.0.0.1 - - [05/May/2025 14:03:01] "GET / HTTP/1.1" 200 -
+2025-05-05 14:13:24,331 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-05 14:13:24,473 - INFO -  * Restarting with stat
+2025-05-05 14:13:26,591 - WARNING -  * Debugger is active!
+2025-05-05 14:13:26,594 - INFO -  * Debugger PIN: 818-196-067
+2025-05-05 14:13:27,727 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-05 14:13:27,881 - INFO -  * Restarting with stat
+2025-05-05 14:14:27,244 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-05 14:14:27,244 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-05 14:14:27,247 - INFO -  * Restarting with stat
+2025-05-05 14:14:29,013 - WARNING -  * Debugger is active!
+2025-05-05 14:14:29,016 - INFO -  * Debugger PIN: 818-196-067
+2025-05-05 14:14:42,671 - INFO - 127.0.0.1 - - [05/May/2025 14:14:42] "GET / HTTP/1.1" 200 -
+2025-05-05 14:14:48,117 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1)
+2025-05-05 14:14:52,330 - INFO - Téléchargement réussi : C:\Users\DELL\AppData\Local\Temp\tmp25zc860i\Base pour fusion\HFC_MENAGE_ENABEL_2024_V1\Menage_VF2_ENA2024_1_STATA_All.zip
+2025-05-05 14:14:52,491 - INFO - Extraction réussie : C:\Users\DELL\AppData\Local\Temp\tmp25zc860i\Base pour fusion\HFC_MENAGE_ENABEL_2024_V1\Menage_VF2_ENA2024_1_STATA_All.zip
+2025-05-05 14:14:52,508 - ERROR - Erreur lors du téléchargement : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmp25zc860i\\Base pour fusion\\HFC_MENAGE_ENABEL_2024_V1\\Menage_VF2_ENA2024_1_STATA_All.zip'
+2025-05-05 14:14:52,511 - INFO - 127.0.0.1 - - [05/May/2025 14:14:52] "[32mPOST /download HTTP/1.1[0m" 302 -
+2025-05-05 14:14:53,560 - INFO - 127.0.0.1 - - [05/May/2025 14:14:53] "GET / HTTP/1.1" 200 -
+2025-05-05 14:17:06,950 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-05 14:17:07,120 - INFO -  * Restarting with stat
+2025-05-05 14:17:09,322 - WARNING -  * Debugger is active!
+2025-05-05 14:17:09,328 - INFO -  * Debugger PIN: 818-196-067
+2025-05-05 14:18:13,202 - INFO - 127.0.0.1 - - [05/May/2025 14:18:13] "GET / HTTP/1.1" 200 -
+2025-05-05 14:18:22,376 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1)
+2025-05-05 14:18:26,449 - INFO - Téléchargement réussi : C:\Users\DELL\AppData\Local\Temp\tmp2k1ft6il.zip
+2025-05-05 14:18:26,510 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmp2k1ft6il.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmp2k1ft6il.zip'
+2025-05-05 14:18:26,513 - INFO - 127.0.0.1 - - [05/May/2025 14:18:26] "POST /download HTTP/1.1" 200 -
+2025-05-05 14:20:54,853 - INFO - 127.0.0.1 - - [05/May/2025 14:20:54] "GET / HTTP/1.1" 200 -
+2025-05-05 14:29:42,476 - INFO - 127.0.0.1 - - [05/May/2025 14:29:42] "GET / HTTP/1.1" 200 -
+2025-05-05 14:29:43,187 - INFO - 127.0.0.1 - - [05/May/2025 14:29:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-05 14:30:50,170 - INFO - 127.0.0.1 - - [05/May/2025 14:30:50] "[32mPOST /save_api_info HTTP/1.1[0m" 302 -
+2025-05-05 14:30:51,469 - INFO - 127.0.0.1 - - [05/May/2025 14:30:51] "GET / HTTP/1.1" 200 -
+2025-05-05 14:31:08,009 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1)
+2025-05-05 14:31:12,008 - INFO - Téléchargement réussi : C:\Users\DELL\AppData\Local\Temp\tmpk_6taf5w.zip
+2025-05-05 14:31:12,074 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmpk_6taf5w.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpk_6taf5w.zip'
+2025-05-05 14:31:12,076 - INFO - 127.0.0.1 - - [05/May/2025 14:31:12] "POST /download HTTP/1.1" 200 -
+2025-05-05 14:31:21,656 - INFO - 127.0.0.1 - - [05/May/2025 14:31:21] "GET / HTTP/1.1" 200 -
+2025-05-05 15:37:16,922 - INFO - 127.0.0.1 - - [05/May/2025 15:37:16] "GET / HTTP/1.1" 200 -
+2025-05-05 15:37:22,177 - INFO - 127.0.0.1 - - [05/May/2025 15:37:22] "GET / HTTP/1.1" 200 -
+2025-05-05 15:40:19,122 - INFO - 127.0.0.1 - - [05/May/2025 15:40:19] "GET / HTTP/1.1" 200 -
+2025-05-05 15:40:20,034 - INFO - 127.0.0.1 - - [05/May/2025 15:40:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-05 15:41:35,072 - INFO - 127.0.0.1 - - [05/May/2025 15:41:35] "[32mPOST /save_api_info HTTP/1.1[0m" 302 -
+2025-05-05 15:41:36,039 - INFO - 127.0.0.1 - - [05/May/2025 15:41:36] "GET / HTTP/1.1" 200 -
+2025-05-05 15:42:52,485 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1)
+2025-05-05 15:42:55,751 - INFO - Téléchargement réussi : C:\Users\DELL\AppData\Local\Temp\tmpshdkz5cy.zip
+2025-05-05 15:42:55,811 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmpshdkz5cy.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpshdkz5cy.zip'
+2025-05-05 15:42:55,816 - INFO - 127.0.0.1 - - [05/May/2025 15:42:55] "POST /download HTTP/1.1" 200 -
+2025-05-05 15:43:21,717 - INFO - 127.0.0.1 - - [05/May/2025 15:43:21] "GET / HTTP/1.1" 200 -
