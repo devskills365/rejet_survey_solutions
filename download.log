@@ -1,0 +1,22 @@
+2025-05-05 13:49:01,360 - INFO - Connexion réussie à l'API.
+2025-05-05 13:49:02,527 - INFO - Questionnaires trouvés : {'id': {0: '2cbc76a1a96a4c07a6aefe56049194d2$1'}, 'questionnaire_id': {0: '2cbc76a1-a96a-4c07-a6ae-fe56049194d2'}, 'version': {0: 1}, 'title': {0: 'HFC_MENAGE_ENABEL_2024'}, 'variable': {0: 'Menage_VF2_ENA2024'}}
+2025-05-05 13:49:02,527 - INFO - Démarrage des téléchargements
+2025-05-05 13:49:02,534 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1)
+2025-05-05 13:49:02,535 - INFO - Paramètres ExportJob: {'ExportType': 'STATA', 'QuestionnaireId': '2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1', 'InterviewStatus': 'All'}
+2025-05-05 13:49:04,545 - INFO - Job d'exportation terminé (Job ID: 34)
+2025-05-05 13:49:04,576 - INFO - URL de téléchargement : https://evaluation.sindevstat.com/primary/api/v2/export/34/file
+2025-05-05 13:49:07,160 - INFO - Téléchargement réussi : Database\Base pour fusion\HFC_MENAGE_ENABEL_2024_V1\export_job_34.zip
+2025-05-05 13:49:07,209 - INFO - Extraction réussie : Database\Base pour fusion\HFC_MENAGE_ENABEL_2024_V1\export_job_34.zip
+2025-05-05 13:49:07,210 - INFO - Fichier zip supprimé : Database\Base pour fusion\HFC_MENAGE_ENABEL_2024_V1\export_job_34.zip
+2025-05-05 13:49:07,211 - INFO - Tous les téléchargements tentés
+2025-05-05 13:49:39,523 - INFO - Connexion réussie à l'API.
+2025-05-05 13:49:47,515 - INFO - Questionnaires trouvés : {'id': {0: '2cbc76a1a96a4c07a6aefe56049194d2$1'}, 'questionnaire_id': {0: '2cbc76a1-a96a-4c07-a6ae-fe56049194d2'}, 'version': {0: 1}, 'title': {0: 'HFC_MENAGE_ENABEL_2024'}, 'variable': {0: 'Menage_VF2_ENA2024'}}
+2025-05-05 13:49:47,515 - INFO - Démarrage des téléchargements
+2025-05-05 13:49:47,517 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1)
+2025-05-05 13:49:47,518 - INFO - Paramètres ExportJob: {'ExportType': 'STATA', 'QuestionnaireId': '2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1', 'InterviewStatus': 'All'}
+2025-05-05 13:49:50,220 - INFO - Job d'exportation terminé (Job ID: 35)
+2025-05-05 13:49:50,222 - INFO - URL de téléchargement : https://evaluation.sindevstat.com/primary/api/v2/export/35/file
+2025-05-05 13:49:55,087 - INFO - Téléchargement réussi : Database\v2\HFC_MENAGE_ENABEL_2024_V1\export_job_35.zip
+2025-05-05 13:49:55,164 - INFO - Extraction réussie : Database\v2\HFC_MENAGE_ENABEL_2024_V1\export_job_35.zip
+2025-05-05 13:49:55,165 - INFO - Fichier zip supprimé : Database\v2\HFC_MENAGE_ENABEL_2024_V1\export_job_35.zip
+2025-05-05 13:49:55,166 - INFO - Tous les téléchargements tentés

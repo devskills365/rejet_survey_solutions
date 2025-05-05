@@ -1,0 +1,1533 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<codeBook version="1.2.2" ID="QIDANDREV" xml-lang="en" xmlns="http://www.icpsr.umich.edu/DDI" xsi:SchemaLocation="http://www.icpsr.umich.edu/DDI http://www.icpsr.umich.edu/DDI/Version1-2-2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>HFC_MENAGE_ENABEL_2024</titl>
+      </titlStmt>
+      <prodStmt>
+        <copyright>
+        </copyright>
+        <software version="1.0.0" date="2015-07-08">StatDDI</software>
+      </prodStmt>
+    </citation>
+    <notes>
+    </notes>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>HFC_MENAGE_ENABEL_2024</titl>
+        <IDNO>QUEST</IDNO>
+      </titlStmt>
+      <prodStmt>
+        <software version="1.0.0" date="2015-07-08">StatDDI</software>
+      </prodStmt>
+    </citation>
+  </stdyDscr>
+  <dataDscr>
+    <var ID="V1" name="interview__id" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[Unique 32-character long identifier of the interview]]></labl>
+      <qstn />
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V2" name="interview__key" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[Interview key (identifier in XX-XX-XX-XX format)]]></labl>
+      <qstn />
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V3" name="assignment__id" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[Assignment id (identifier in numeric format)]]></labl>
+      <qstn />
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V4" name="sssys_irnd" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[Random number in the range 0..1 associated with interview]]></labl>
+      <qstn />
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V5" name="has__errors" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[Errors count in the interview]]></labl>
+      <qstn />
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V6" name="interview__status" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[Status of the interview]]></labl>
+      <qstn />
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V7" name="Nom_enq" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[Nom de l’enquêteur]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Nom de l’enquêteur]]></qstnLit>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V8" name="Num_tel" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[Téléphone de l'enquêteur]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Téléphone de l'enquêteur]]></qstnLit>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V9" name="Nom_Prod" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[Nom du producteur]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Nom du producteur]]></qstnLit>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V10" name="tel_prod" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[Telephone du producteur]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Telephone du producteur]]></qstnLit>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V11" name="Region" files="F1" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[region]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Region]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V12" name="Depart" files="F1" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Departement]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Departement]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V13" name="sous_p" files="F1" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Sous-Préfecture]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Sous-Préfecture]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V14" name="Ville" files="F1" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Ville/Village/quartier]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Ville/Village]]></qstnLit>
+      </qstn>
+      <catgry>
+        <catValu>10111</catValu>
+        <labl><![CDATA[ATTIGUEHI]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>10121</catValu>
+        <labl><![CDATA[LELEBLE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>10122</catValu>
+        <labl><![CDATA[TOUTOUKO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>10211</catValu>
+        <labl><![CDATA[NIAMOUE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>10221</catValu>
+        <labl><![CDATA[DJAHAKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>10231</catValu>
+        <labl><![CDATA[KASSASSOU 2]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>11111</catValu>
+        <labl><![CDATA[DOBOUO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>11112</catValu>
+        <labl><![CDATA[SIMONKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>11113</catValu>
+        <labl><![CDATA[LOUHIRI]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>11114</catValu>
+        <labl><![CDATA[SIKATIO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>11121</catValu>
+        <labl><![CDATA[GOBROKO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>11122</catValu>
+        <labl><![CDATA[ZEGREBOUE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>12111</catValu>
+        <labl><![CDATA[KANGAKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>12112</catValu>
+        <labl><![CDATA[TOUTOUBRE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>12113</catValu>
+        <labl><![CDATA[GUESSIHIO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>13111</catValu>
+        <labl><![CDATA[OKABO 2]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>13112</catValu>
+        <labl><![CDATA[SOUMAILAKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>13113</catValu>
+        <labl><![CDATA[VAVOUA]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>13114</catValu>
+        <labl><![CDATA[BAHOULIFLA]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>13115</catValu>
+        <labl><![CDATA[DILA]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>13116</catValu>
+        <labl><![CDATA[DEMA 3]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>14111</catValu>
+        <labl><![CDATA[NIABLE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>14112</catValu>
+        <labl><![CDATA[BRINDOUKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>14113</catValu>
+        <labl><![CDATA[DIANGOGBO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>14114</catValu>
+        <labl><![CDATA[ABRONAMOUE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>14121</catValu>
+        <labl><![CDATA[BOKAKOKORE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>15111</catValu>
+        <labl><![CDATA[AFFERY]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>15112</catValu>
+        <labl><![CDATA[COPA]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>15113</catValu>
+        <labl><![CDATA[DODOKOI]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>16111</catValu>
+        <labl><![CDATA[KIMOUKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>16112</catValu>
+        <labl><![CDATA[KOUTA]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>16113</catValu>
+        <labl><![CDATA[LAGAZE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>16114</catValu>
+        <labl><![CDATA[PETIT DIMBOKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>16121</catValu>
+        <labl><![CDATA[KAMARADOUGOU]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>16131</catValu>
+        <labl><![CDATA[LAUZOUA]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>16132</catValu>
+        <labl><![CDATA[GNAMA]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>16141</catValu>
+        <labl><![CDATA[DIANKRO 2]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>16151</catValu>
+        <labl><![CDATA[BROUDOUGOU PENDA 1]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>16211</catValu>
+        <labl><![CDATA[DAHIRI]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>16212</catValu>
+        <labl><![CDATA[GBAHIRI]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>16213</catValu>
+        <labl><![CDATA[DJOKO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>16214</catValu>
+        <labl><![CDATA[LIGROHOUIN]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>16311</catValu>
+        <labl><![CDATA[TABOUE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17111</catValu>
+        <labl><![CDATA[ANZROMEKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17112</catValu>
+        <labl><![CDATA[ASSAHOUREKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17113</catValu>
+        <labl><![CDATA[CHANTIER MOH]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17114</catValu>
+        <labl><![CDATA[EFFACI 2]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17115</catValu>
+        <labl><![CDATA[N DRIKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17116</catValu>
+        <labl><![CDATA[KRAGUI]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17117</catValu>
+        <labl><![CDATA[GNITI TOUADJI]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17118</catValu>
+        <labl><![CDATA[GBOGBO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17119</catValu>
+        <labl><![CDATA[POGREAGUI]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>171110</catValu>
+        <labl><![CDATA[SAKIARE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>171111</catValu>
+        <labl><![CDATA[KOUAMEAGUI]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>171112</catValu>
+        <labl><![CDATA[TAGBA]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17211</catValu>
+        <labl><![CDATA[KOKOKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17212</catValu>
+        <labl><![CDATA[KOUASSIDANKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17311</catValu>
+        <labl><![CDATA[OUSSOUKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17312</catValu>
+        <labl><![CDATA[TOLAKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17321</catValu>
+        <labl><![CDATA[SOUBRE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17331</catValu>
+        <labl><![CDATA[DOBRE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17332</catValu>
+        <labl><![CDATA[JULESKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17341</catValu>
+        <labl><![CDATA[BOKAKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17342</catValu>
+        <labl><![CDATA[N GATTAKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17351</catValu>
+        <labl><![CDATA[OKROUYO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17352</catValu>
+        <labl><![CDATA[OTTAWA]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17361</catValu>
+        <labl><![CDATA[OBROUAYO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17371</catValu>
+        <labl><![CDATA[MAYO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17381</catValu>
+        <labl><![CDATA[EMILEKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17391</catValu>
+        <labl><![CDATA[NEMATOULAYE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17392</catValu>
+        <labl><![CDATA[BOUKARIKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17393</catValu>
+        <labl><![CDATA[DOGABRE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17411</catValu>
+        <labl><![CDATA[LOGBOZOUA]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17412</catValu>
+        <labl><![CDATA[WONSEALY]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>17413</catValu>
+        <labl><![CDATA[ADOUKOUASSIKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18111</catValu>
+        <labl><![CDATA[BIGNE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18112</catValu>
+        <labl><![CDATA[SAHOUA]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18113</catValu>
+        <labl><![CDATA[GAGNY]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18114</catValu>
+        <labl><![CDATA[DOBA]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18121</catValu>
+        <labl><![CDATA[ALLAHYAOKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18131</catValu>
+        <labl><![CDATA[MARI CHANTIER]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18132</catValu>
+        <labl><![CDATA[MOSSIKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18211</catValu>
+        <labl><![CDATA[ABRAHAMKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18212</catValu>
+        <labl><![CDATA[GBAHIRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18213</catValu>
+        <labl><![CDATA[GNATO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18221</catValu>
+        <labl><![CDATA[PARA]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18222</catValu>
+        <labl><![CDATA[KARIE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18223</catValu>
+        <labl><![CDATA[NIGRE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18311</catValu>
+        <labl><![CDATA[GNITY ECOLE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18312</catValu>
+        <labl><![CDATA[BIDA]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>18313</catValu>
+        <labl><![CDATA[WAKAPLICO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>19111</catValu>
+        <labl><![CDATA[AKRESSI]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>19112</catValu>
+        <labl><![CDATA[AYAME]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>19121</catValu>
+        <labl><![CDATA[SAONKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>19122</catValu>
+        <labl><![CDATA[YAOU]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>20111</catValu>
+        <labl><![CDATA[KOFFIKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>21111</catValu>
+        <labl><![CDATA[BATHELEMIKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>21112</catValu>
+        <labl><![CDATA[FATAMA]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>21113</catValu>
+        <labl><![CDATA[BOIGNYKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>21114</catValu>
+        <labl><![CDATA[NEKO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>21115</catValu>
+        <labl><![CDATA[NEGREAGUI]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>21116</catValu>
+        <labl><![CDATA[KOYEKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>21117</catValu>
+        <labl><![CDATA[AFFIKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>21118</catValu>
+        <labl><![CDATA[AKPOUEKRO]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>21119</catValu>
+        <labl><![CDATA[KOFFIKANKRO]]></labl>
+      </catgry>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V15" name="Zone_D" files="F1" intrvl="contin">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Zone de dénombrement du ménage]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Zone de dénombrement du ménage&nbsp;?]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V16" name="Ilot_men" files="F1" intrvl="contin">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Numéro d'ilôt du ménage]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Numéro d'ilôt du ménage]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V17" name="Num_bat" files="F1" intrvl="contin">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Numéro de concession ou de bâtiment du ménage]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Numéro de concession ou de bâtiment du ménage]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V18" name="num_menage" files="F1" intrvl="contin">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Numéro du ménage]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Numéro du ménage]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V19" name="I1_Date" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[I1.Date de l’interview]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[I1.Date de l’interview]]></qstnLit>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V20" name="I3_Nom_repondan" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[I3.Nom du répondant]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[I3.Nom du répondant]]></qstnLit>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V21" name="A1_nbr_personn" files="F1" intrvl="contin">
+      <location RecSegNo="1" />
+      <labl><![CDATA[A1.Quel est le nombre total de personnes dans votre ménage ?]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A1.Quel est le nombre total de personnes dans votre ménage ?]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V22" name="name_ch" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[name_ch]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[//membres_menage.Any(x=&gt;x.A10_Lien_CM == 1)?
+
+//membres_menage.Where(x=&gt;x.A10_Lien_CM == 1).First().A5_Nom_indiv:
+
+//""
+
+
+A99_Nom.FirstOrDefault(
+    x=&gt;x.Item1==(
+        membres_menage.FirstOrDefault(y=&gt; y.A10_Lien_CM==1)?.@rowcode ?? 0))?.Item2 ?? "N/A"]]></qstnLit>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V23" name="A99_Nom__0" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:0]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V24" name="A99_Nom__0c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:0c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V25" name="A99_Nom__1" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:1]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V26" name="A99_Nom__1c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:1c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V27" name="A99_Nom__2" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:2]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V28" name="A99_Nom__2c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:2c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V29" name="A99_Nom__3" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:3]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V30" name="A99_Nom__3c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:3c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V31" name="A99_Nom__4" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:4]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V32" name="A99_Nom__4c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:4c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V33" name="A99_Nom__5" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:5]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V34" name="A99_Nom__5c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:5c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V35" name="A99_Nom__6" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:6]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V36" name="A99_Nom__6c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:6c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V37" name="A99_Nom__7" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:7]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V38" name="A99_Nom__7c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:7c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V39" name="A99_Nom__8" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:8]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V40" name="A99_Nom__8c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:8c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V41" name="A99_Nom__9" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:9]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V42" name="A99_Nom__9c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:9c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V43" name="A99_Nom__10" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:10]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V44" name="A99_Nom__10c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:10c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V45" name="A99_Nom__11" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:11]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V46" name="A99_Nom__11c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:11c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V47" name="A99_Nom__12" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:12]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V48" name="A99_Nom__12c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:12c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V49" name="A99_Nom__13" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:13]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V50" name="A99_Nom__13c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:13c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V51" name="A99_Nom__14" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:14]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V52" name="A99_Nom__14c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:14c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V53" name="A99_Nom__15" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:15]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V54" name="A99_Nom__15c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:15c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V55" name="A99_Nom__16" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:16]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V56" name="A99_Nom__16c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:16c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V57" name="A99_Nom__17" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:17]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V58" name="A99_Nom__17c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:17c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V59" name="A99_Nom__18" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:18]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V60" name="A99_Nom__18c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:18c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V61" name="A99_Nom__19" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:19]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V62" name="A99_Nom__19c" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[nom de membre de menage:19c]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[Prière nous donner les noms des membres du ménage]]></qstnLit>
+        <ivuInstr><![CDATA[Il faut commencer par le chef du ménage]]></ivuInstr>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V63" name="B1_type_lgts" files="F1" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quel type de logement est la concession principale du ménage ?]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[B1.Quel type de logement est la concession principale du ménage ?]]></qstnLit>
+      </qstn>
+      <catgry>
+        <catValu>1</catValu>
+        <labl><![CDATA[Maison simple (en dur)]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl><![CDATA[Maison en Case]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl><![CDATA[Baraque]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl><![CDATA[Maison en bande/cour commune]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl><![CDATA[Villa moderne/Duplex]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>88</catValu>
+        <labl><![CDATA[Autres (à préciser)]]></labl>
+      </catgry>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V64" name="B1x_typ_lgts_Autrx" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[B1x.precisez l'autre type de logement]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[B1x.precisez l'autre type de logement]]></qstnLit>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V65" name="B2_materiau" files="F1" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Dans quel matériau est fait le mur du bâtiment principalement]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[B2.De quel matériau est fait le mur du bâtiment principalement du logement ?]]></qstnLit>
+      </qstn>
+      <catgry>
+        <catValu>1</catValu>
+        <labl><![CDATA[Carton/plastique]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl><![CDATA[Tôle]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl><![CDATA[Bois]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl><![CDATA[Terre battue]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl><![CDATA[Ciment]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>88</catValu>
+        <labl><![CDATA[Autres (à préciser)]]></labl>
+      </catgry>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V66" name="B2x_autr_materio_Autrx" files="F1" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[B2x. précisez l'autre type de matériau duquel est fait le mur]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[B2x. precisez l'autre type de materiau duquel est fait le mur]]></qstnLit>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V67" name="B3_nbr_pieces" files="F1" intrvl="contin">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Combien de pièces compte le logement principal du ménage ?]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[B3.Combien de pièces compte le logement principal du ménage ?]]></qstnLit>
+        <ivuInstr><![CDATA[Seuls le salon et la chambre sont qualifiés de pièce]]></ivuInstr>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V68" name="B4_revet_toit" files="F1" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Dans quel matériau est le revêtement du toit ?]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[B4.Dans quel matériau est le revêtement du toit ?]]></qstnLit>
+      </qstn>
+      <catgry>
+        <catValu>1</catValu>
+        <labl><![CDATA[Plastique]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl><![CDATA[Paille]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl><![CDATA[Tôle]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl><![CDATA[Tuile]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>88</catValu>
+        <labl><![CDATA[Autres (à préciser)]]></labl>
+      </catgry>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V69" name="membres_menage__id" files="F2" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[Id in membres_menage]]></labl>
+      <qstn />
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V70" name="interview__key" files="F2" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[Interview key (identifier in XX-XX-XX-XX format)]]></labl>
+      <qstn />
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V71" name="A6_Age_Indiv" files="F2" intrvl="contin">
+      <location RecSegNo="1" />
+      <labl><![CDATA[A6 Age]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A6.Age de %rostertitle%]]></qstnLit>
+        <ivuInstr><![CDATA[Si l'age est moins d'un an, ecrire 0]]></ivuInstr>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V72" name="A7_sexe" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[A7. sexe]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A7.Sexe de %rostertitle%]]></qstnLit>
+      </qstn>
+      <catgry>
+        <catValu>1</catValu>
+        <labl><![CDATA[Masculin]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl><![CDATA[Féminin]]></labl>
+      </catgry>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V73" name="A10_Lien_CM" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[A10 Le lien de parenté avec le chef du ménage]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A10.Le lien de parenté de %rostertitle% avec le chef du ménage]]></qstnLit>
+      </qstn>
+      <catgry>
+        <catValu>1</catValu>
+        <labl><![CDATA[Chef du ménage]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl><![CDATA[Epouse/Coépouse]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl><![CDATA[Frère/Sœur]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl><![CDATA[Fils/Fille]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl><![CDATA[beaux parents]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl><![CDATA[Pères/mères]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>88</catValu>
+        <labl><![CDATA[Autres ( à préciser)]]></labl>
+      </catgry>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V74" name="A10_lien_autrX" files="F2" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[Autre lien de parenté]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A10x.Précisez le lien de parenté de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V75" name="A9_Sit_matri" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[A9.Situation matrimoniale]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A9.Situation matrimoniale de %rostertitle%]]></qstnLit>
+      </qstn>
+      <catgry>
+        <catValu>1</catValu>
+        <labl><![CDATA[Célibataire]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl><![CDATA[Mariage légal/Mariage coutumier]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl><![CDATA[Divorcé/Séparé]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl><![CDATA[Veuf/Veuve]]></labl>
+      </catgry>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V76" name="A11_nivea_eleve" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[A11.Savoir lire et écrire]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A11.Quel est le niveau d'éducation le plus élevé atteint par %rostertitle% ?]]></qstnLit>
+      </qstn>
+      <catgry>
+        <catValu>1</catValu>
+        <labl><![CDATA[AUCUN]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl><![CDATA[PRÉSCOLAIRE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl><![CDATA[PRIMAIRE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl><![CDATA[SECONDAIRE 1( de la sixième à la classe de troisième)]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl><![CDATA[SECONDAIRE 2 ( de la classe de seconde à la classe de terminale)]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl><![CDATA[PROFESSIONNEL ( école de métier ou technique)]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl><![CDATA[SUPÉRIEUR ( grande école ou université)]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl><![CDATA[CORANIQUE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl><![CDATA[ALPHABÉTISATION FONCTIONNELLE]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>88</catValu>
+        <labl><![CDATA[Autres à préciser]]></labl>
+      </catgry>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V77" name="A11_niveau_Autrx" files="F2" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[A11x.preciser autre niveau]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A11x.preciser autre niveau élevé]]></qstnLit>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V78" name="nivea_eleve" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Savoir lire et écrire]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[%rostertitle%  sait il lire et écrire?]]></qstnLit>
+      </qstn>
+      <catgry>
+        <catValu>1</catValu>
+        <labl><![CDATA[Ne sais pas lire ni écrire]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl><![CDATA[Sais lire et écrire]]></labl>
+      </catgry>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V79" name="A12_actuel_scolar" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[PRO_QM7A.Niveau d'instruction du chef de ménage]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A12.Est-ce que %rostertitle% est actuellement scolarisé ?]]></qstnLit>
+      </qstn>
+      <catgry>
+        <catValu>1</catValu>
+        <labl><![CDATA[oui]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl><![CDATA[non]]></labl>
+      </catgry>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V80" name="A13_classe" files="F2" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[quelle classe]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A13.%rostertitle% est en quelle classe actuellement ?]]></qstnLit>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V81" name="A14_activ_pricipal" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité principale de]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A14.Quelle est l’activité principale de %rostertitle%]]></qstnLit>
+      </qstn>
+      <catgry>
+        <catValu>1</catValu>
+        <labl><![CDATA[Agriculteur]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl><![CDATA[Eleveur]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl><![CDATA[Salarié (public/privé)]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl><![CDATA[Commerçant (e) (plantes médicinales)]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl><![CDATA[Commerçant (e) (mareyeuse)]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl><![CDATA[Commerçant (e) (autres)]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl><![CDATA[Artisan (ne)]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl><![CDATA[Ménagère]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl><![CDATA[Elève/Étudiant]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl><![CDATA[Un inactif (vieillard, handicap Physique/mental, Enfant non scolarisé, etc.) etc.)]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>11</catValu>
+        <labl><![CDATA[Cueillette]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl><![CDATA[Transformation]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>13</catValu>
+        <labl><![CDATA[Pêcheur]]></labl>
+      </catgry>
+      <catgry>
+        <catValu>88</catValu>
+        <labl><![CDATA[Autres (à préciser)]]></labl>
+      </catgry>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V82" name="A14x_principal_Autrx" files="F2" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[precisez cette autre activité principale]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A14x.precisez cette autre activité principale]]></qstnLit>
+      </qstn>
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V83" name="A15_activ_second__1" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Agriculteur]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V84" name="A15_activ_second__2" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Eleveur]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V85" name="A15_activ_second__3" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Salarié (public/privé)]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V86" name="A15_activ_second__4" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Commerçant (e) (plantes médicinales)]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V87" name="A15_activ_second__5" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Commerçant (e) (mareyeuse)]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V88" name="A15_activ_second__6" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Commerçant (e) (autres)]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V89" name="A15_activ_second__7" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Artisan (ne)]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V90" name="A15_activ_second__8" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Ménagère]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V91" name="A15_activ_second__9" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Elève/Étudiant]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V92" name="A15_activ_second__10" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Un inactif (vieillard, handicap etc.)]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V93" name="A15_activ_second__11" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Physique/mental, Enfant non scolarisé, etc.)]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V94" name="A15_activ_second__12" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Cueillette]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V95" name="A15_activ_second__13" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Transformation]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V96" name="A15_activ_second__14" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Pêcheur]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V97" name="A15_activ_second__99" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Aucun]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V98" name="A15_activ_second__88" files="F2" intrvl="discrete">
+      <location RecSegNo="1" />
+      <labl><![CDATA[Quelle est l’activité secondaire:Autres (à préciser)]]></labl>
+      <qstn>
+        <qstnLit><![CDATA[A15.Quelles sont les activités secondaires de %rostertitle%]]></qstnLit>
+      </qstn>
+      <varFormat type="numeric" schema="other" />
+    </var>
+    <var ID="V99" name="A99_Nom" files="F2" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[Roster list question]]></labl>
+      <qstn />
+      <varFormat type="character" schema="other" />
+    </var>
+    <var ID="V100" name="interview__id" files="F2" intrvl="discrete">
+      <location width="255" RecSegNo="1" />
+      <labl><![CDATA[Unique 32-character long identifier of the interview]]></labl>
+      <qstn />
+      <varFormat type="character" schema="other" />
+    </var>
+  </dataDscr>
+  <fileDscr ID="F1" URI="Temp#33.~esstar?Index=0&amp;Name=Menage_VF2_ENA2024">
+    <fileTxt>
+      <fileName>Menage_VF2_ENA2024.NSDstat</fileName>
+      <dimensns>
+        <caseQnty>0</caseQnty>
+        <varQnty>68</varQnty>
+      </dimensns>
+      <fileType>Nesstar 200801</fileType>
+    </fileTxt>
+  </fileDscr>
+  <fileDscr ID="F2" URI="Temp#33.~esstar?Index=1&amp;Name=membres_menage">
+    <fileTxt>
+      <fileName>membres_menage.NSDstat</fileName>
+      <dimensns>
+        <caseQnty>0</caseQnty>
+        <varQnty>32</varQnty>
+      </dimensns>
+      <fileType>Nesstar 200801</fileType>
+    </fileTxt>
+  </fileDscr>
+</codeBook>
