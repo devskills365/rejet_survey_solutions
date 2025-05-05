@@ -81,3 +81,48 @@
 2025-05-05 15:42:55,811 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmpshdkz5cy.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpshdkz5cy.zip'
 2025-05-05 15:42:55,816 - INFO - 127.0.0.1 - - [05/May/2025 15:42:55] "POST /download HTTP/1.1" 200 -
 2025-05-05 15:43:21,717 - INFO - 127.0.0.1 - - [05/May/2025 15:43:21] "GET / HTTP/1.1" 200 -
+2025-05-05 16:51:22,442 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-05 16:51:22,443 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-05 16:51:22,449 - INFO -  * Restarting with stat
+2025-05-05 16:51:24,521 - WARNING -  * Debugger is active!
+2025-05-05 16:51:24,527 - INFO -  * Debugger PIN: 818-196-067
+2025-05-05 17:04:54,242 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-05 17:04:54,422 - INFO -  * Restarting with stat
+2025-05-05 17:04:56,531 - WARNING -  * Debugger is active!
+2025-05-05 17:04:56,536 - INFO -  * Debugger PIN: 818-196-067
+2025-05-05 17:05:05,896 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-05 17:05:05,897 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-05 17:05:05,899 - INFO -  * Restarting with stat
+2025-05-05 17:05:07,750 - WARNING -  * Debugger is active!
+2025-05-05 17:05:07,753 - INFO -  * Debugger PIN: 818-196-067
+2025-05-05 18:56:17,794 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-05 18:56:18,152 - INFO -  * Restarting with stat
+2025-05-05 18:56:21,101 - WARNING -  * Debugger is active!
+2025-05-05 18:56:21,105 - INFO -  * Debugger PIN: 818-196-067
+2025-05-05 18:56:26,638 - INFO - 127.0.0.1 - - [05/May/2025 18:56:26] "GET / HTTP/1.1" 200 -
+2025-05-05 18:56:34,108 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1)
+2025-05-05 18:56:36,019 - ERROR - Erreur lors du téléchargement : 'set' object has no attribute 'items'
+2025-05-05 18:56:36,022 - INFO - 127.0.0.1 - - [05/May/2025 18:56:36] "[32mPOST /download HTTP/1.1[0m" 302 -
+2025-05-05 18:56:37,004 - INFO - 127.0.0.1 - - [05/May/2025 18:56:37] "GET / HTTP/1.1" 200 -
+2025-05-05 18:57:01,618 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-05 18:57:01,760 - INFO -  * Restarting with stat
+2025-05-05 18:57:03,820 - WARNING -  * Debugger is active!
+2025-05-05 18:57:03,823 - INFO -  * Debugger PIN: 818-196-067
+2025-05-05 18:58:46,874 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-05 18:58:47,012 - INFO -  * Restarting with stat
+2025-05-05 18:58:48,744 - WARNING -  * Debugger is active!
+2025-05-05 18:58:48,747 - INFO -  * Debugger PIN: 818-196-067
+2025-05-05 18:58:48,826 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-05 18:58:48,977 - INFO -  * Restarting with stat
+2025-05-05 18:58:50,714 - WARNING -  * Debugger is active!
+2025-05-05 18:58:50,720 - INFO -  * Debugger PIN: 818-196-067
+2025-05-05 18:59:14,774 - INFO - 127.0.0.1 - - [05/May/2025 18:59:14] "GET / HTTP/1.1" 200 -
+2025-05-05 18:59:19,625 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1)
+2025-05-05 18:59:24,694 - INFO - Téléchargement réussi : C:\Users\DELL\AppData\Local\Temp\tmpm_znyt7y.zip
+2025-05-05 18:59:24,773 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmpm_znyt7y.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpm_znyt7y.zip'
+2025-05-05 18:59:24,776 - INFO - 127.0.0.1 - - [05/May/2025 18:59:24] "POST /download HTTP/1.1" 200 -
+2025-05-05 19:01:23,513 - INFO - 127.0.0.1 - - [05/May/2025 19:01:23] "GET / HTTP/1.1" 200 -
+2025-05-05 20:27:36,418 - INFO - 127.0.0.1 - - [05/May/2025 20:27:36] "GET / HTTP/1.1" 200 -
+2025-05-05 20:27:40,092 - INFO - 127.0.0.1 - - [05/May/2025 20:27:40] "GET / HTTP/1.1" 200 -
