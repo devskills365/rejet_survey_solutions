@@ -5,11 +5,10 @@ try:
     # Connexion au serveur Survey Solutions avec le workspace 'primary'
     client = Client(
         url='https://evaluation.sindevstat.com',
-        api_user='********',
-        api_password='*********************',
-        workspace='*****************'  # Spécifier le workspace ici
+        api_user='user_API',
+        api_password='user_API_password_01',
+        workspace='primary'  # Spécifier le workspace ici
     )
-
     # Initialisation de l'API pour les interviews
     interviews_api = InterviewsApi(client)
 

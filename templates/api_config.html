@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration API - Survey Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="max-w-md w-full bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold text-gray-800 mb-6 text-center">Configuration API</h1>
+
+        <!-- Affichage des messages flash -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="mb-4 p-4 rounded-lg {% if category == 'error' %}bg-red-100 text-red-700{% else %}bg-green-100 text-green-700{% endif %}">
+                        {{ message | safe }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <!-- Formulaire de configuration API -->
+        <form method="POST" action="{{ url_for('api_config') }}" class="space-y-4">
+            <div>
+                <label for="api_user" class="block text-sm font-medium text-gray-700">URL du serveur</label>
+                <input type="text" name="api_user" id="api_user" value="{{ form_data.get('api_user', '') }}"
+                       class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                       placeholder="https://example.com" required>
+            </div>
+            <div>
+                <label for="utilisateur" class="block text-sm font-medium text-gray-700">Nom d'utilisateur</label>
+                <input type="text" name="utilisateur" id="utilisateur" value="{{ form_data.get('utilisateur', '') }}"
+                       class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                       placeholder="Utilisateur" required>
+            </div>
+            <div>
+                <label for="mot_de_passe" class="block text-sm font-medium text-gray-700">Mot de passe</label>
+                <input type="password" name="mot_de_passe" id="mot_de_passe" value="{{ form_data.get('mot_de_passe', '') }}"
+                       class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                       placeholder="Mot de passe" required>
+            </div>
+            <div>
+                <label for="workspace" class="block text-sm font-medium text-gray-700">Workspace</label>
+                <input type="text" name="workspace" id="workspace" value="{{ form_data.get('workspace', '') }}"
+                       class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                       placeholder="Workspace" required>
+            </div>
+            <button type="submit"
+                    class="w-full bg-indigo-600 text-white p-2 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                Enregistrer
+            </button>
+        </form>
+
+        <!-- Lien vers la page principale si API déjà configurée -->
+        {% if session.get('api_info') %}
+            <div class="mt-4 text-center">
+                <a href="{{ url_for('reject_and_comment') }}" class="text-indigo-600 hover:underline">
+                    Retour à la page principale
+                </a>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

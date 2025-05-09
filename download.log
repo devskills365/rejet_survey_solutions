@@ -126,3 +126,323 @@
 2025-05-05 19:01:23,513 - INFO - 127.0.0.1 - - [05/May/2025 19:01:23] "GET / HTTP/1.1" 200 -
 2025-05-05 20:27:36,418 - INFO - 127.0.0.1 - - [05/May/2025 20:27:36] "GET / HTTP/1.1" 200 -
 2025-05-05 20:27:40,092 - INFO - 127.0.0.1 - - [05/May/2025 20:27:40] "GET / HTTP/1.1" 200 -
+2025-05-06 07:17:38,704 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-06 07:17:38,705 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-06 07:17:38,708 - INFO -  * Restarting with stat
+2025-05-06 07:17:40,306 - WARNING -  * Debugger is active!
+2025-05-06 07:17:40,346 - INFO -  * Debugger PIN: 818-196-067
+2025-05-06 07:18:01,963 - INFO - 127.0.0.1 - - [06/May/2025 07:18:01] "GET / HTTP/1.1" 200 -
+2025-05-06 07:18:02,365 - INFO - 127.0.0.1 - - [06/May/2025 07:18:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-06 07:18:31,853 - INFO - 127.0.0.1 - - [06/May/2025 07:18:31] "[32mPOST /save_api_info HTTP/1.1[0m" 302 -
+2025-05-06 07:18:32,773 - INFO - 127.0.0.1 - - [06/May/2025 07:18:32] "GET / HTTP/1.1" 200 -
+2025-05-06 07:18:58,257 - INFO - 127.0.0.1 - - [06/May/2025 07:18:58] "POST / HTTP/1.1" 200 -
+2025-05-06 16:10:48,088 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-06 16:10:48,736 - INFO -  * Restarting with stat
+2025-05-06 16:10:59,849 - WARNING -  * Debugger is active!
+2025-05-06 16:10:59,857 - INFO -  * Debugger PIN: 818-196-067
+2025-05-06 16:18:18,755 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-06 16:18:19,018 - INFO -  * Restarting with stat
+2025-05-06 16:18:23,029 - WARNING -  * Debugger is active!
+2025-05-06 16:18:23,036 - INFO -  * Debugger PIN: 818-196-067
+2025-05-06 16:18:25,488 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-06 16:18:25,742 - INFO -  * Restarting with stat
+2025-05-06 16:18:30,116 - WARNING -  * Debugger is active!
+2025-05-06 16:18:30,122 - INFO -  * Debugger PIN: 818-196-067
+2025-05-06 16:18:53,492 - INFO - 127.0.0.1 - - [06/May/2025 16:18:53] "GET / HTTP/1.1" 200 -
+2025-05-06 16:18:54,116 - INFO - 127.0.0.1 - - [06/May/2025 16:18:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-06 16:19:14,452 - INFO - 127.0.0.1 - - [06/May/2025 16:19:14] "GET / HTTP/1.1" 200 -
+2025-05-06 16:19:39,411 - INFO - 127.0.0.1 - - [06/May/2025 16:19:39] "POST / HTTP/1.1" 200 -
+2025-05-06 16:20:58,183 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-06 16:20:58,449 - INFO -  * Restarting with stat
+2025-05-06 16:21:02,175 - WARNING -  * Debugger is active!
+2025-05-06 16:21:02,181 - INFO -  * Debugger PIN: 818-196-067
+2025-05-06 16:21:13,240 - INFO - Commentaire pour ID 0816d817510a4f36b0234dd484a54313, variable A99_Nom, hors roster
+2025-05-06 16:21:13,622 - INFO - Commentaire pour ID 101101cb33f741318f5ffb5d4817838a, variable A99_Nom, hors roster
+2025-05-06 16:21:13,908 - INFO - Commentaire pour ID 396e56edea424825ac59a8fad046e261, variable A99_Nom, hors roster
+2025-05-06 16:21:14,188 - INFO - Commentaire pour ID 1f7bcaae3c7b44f5aac7d1709460105a, variable A99_Nom, hors roster
+2025-05-06 16:21:16,242 - INFO - 127.0.0.1 - - [06/May/2025 16:21:16] "POST / HTTP/1.1" 200 -
+2025-05-06 16:45:00,211 - INFO - 127.0.0.1 - - [06/May/2025 16:45:00] "GET / HTTP/1.1" 200 -
+2025-05-06 16:45:35,602 - INFO - Commentaire pour ID 63aee8332563490289255bbe42f5897c, variable A10_Lien_CM, hors roster
+2025-05-06 16:45:35,922 - INFO - Commentaire pour ID 63aee8332563490289255bbe42f5897c, variable A10_Lien_CM, hors roster
+2025-05-06 16:45:36,179 - INFO - Commentaire pour ID 63aee8332563490289255bbe42f5897c, variable A10_Lien_CM, hors roster
+2025-05-06 16:45:36,430 - INFO - Commentaire pour ID 4043d671d6ae492f926d34769760399b, variable A10_Lien_CM, hors roster
+2025-05-06 16:45:37,184 - INFO - 127.0.0.1 - - [06/May/2025 16:45:37] "POST / HTTP/1.1" 200 -
+2025-05-06 16:50:24,800 - INFO - 127.0.0.1 - - [06/May/2025 16:50:24] "GET / HTTP/1.1" 200 -
+2025-05-06 16:50:40,181 - INFO - Commentaire pour ID 4043d671d6ae492f926d34769760399b, variable A10_Lien_CM, hors roster
+2025-05-06 16:50:41,000 - INFO - 127.0.0.1 - - [06/May/2025 16:50:41] "POST / HTTP/1.1" 200 -
+2025-05-06 16:51:44,014 - INFO - 127.0.0.1 - - [06/May/2025 16:51:44] "GET / HTTP/1.1" 200 -
+2025-05-06 16:52:02,373 - INFO - Commentaire pour ID 63aee8332563490289255bbe42f5897c, variable A10_Lien_CM, hors roster
+2025-05-06 16:52:02,667 - INFO - Commentaire pour ID 63aee8332563490289255bbe42f5897c, variable A10_Lien_CM, hors roster
+2025-05-06 16:52:02,924 - INFO - Commentaire pour ID 63aee8332563490289255bbe42f5897c, variable A10_Lien_CM, hors roster
+2025-05-06 16:52:03,709 - INFO - 127.0.0.1 - - [06/May/2025 16:52:03] "POST / HTTP/1.1" 200 -
+2025-05-06 16:53:26,573 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-06 16:53:27,189 - INFO -  * Restarting with stat
+2025-05-06 16:53:37,292 - WARNING -  * Debugger is active!
+2025-05-06 16:53:37,305 - INFO -  * Debugger PIN: 818-196-067
+2025-05-06 16:53:40,961 - INFO - Commentaire pour ID 63aee8332563490289255bbe42f5897c, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 16:53:41,224 - INFO - Commentaire pour ID 63aee8332563490289255bbe42f5897c, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 16:53:41,581 - INFO - Commentaire pour ID 63aee8332563490289255bbe42f5897c, variable A10_Lien_CM, membres_menage__id 3, roster_vector [2]
+2025-05-06 16:53:42,254 - INFO - 127.0.0.1 - - [06/May/2025 16:53:42] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-05-06 16:53:42,381 - INFO - 127.0.0.1 - - [06/May/2025 16:53:42] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-06 16:53:42,444 - INFO - 127.0.0.1 - - [06/May/2025 16:53:42] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-06 16:53:42,568 - INFO - 127.0.0.1 - - [06/May/2025 16:53:42] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=WjPmU8QATmfOrLDvgnML HTTP/1.1" 200 -
+2025-05-06 16:53:42,713 - INFO - 127.0.0.1 - - [06/May/2025 16:53:42] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-06 16:54:01,017 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-06 16:54:01,457 - INFO -  * Restarting with stat
+2025-05-06 16:54:10,460 - WARNING -  * Debugger is active!
+2025-05-06 16:54:10,468 - INFO -  * Debugger PIN: 818-196-067
+2025-05-06 16:54:13,664 - INFO - Commentaire pour ID 63aee8332563490289255bbe42f5897c, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 16:54:13,933 - INFO - Commentaire pour ID 63aee8332563490289255bbe42f5897c, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 16:54:14,208 - INFO - Commentaire pour ID 63aee8332563490289255bbe42f5897c, variable A10_Lien_CM, membres_menage__id 3, roster_vector [2]
+2025-05-06 16:54:15,230 - INFO - 127.0.0.1 - - [06/May/2025 16:54:15] "POST / HTTP/1.1" 200 -
+2025-05-06 17:00:45,927 - INFO - Commentaire pour ID 0816d817510a4f36b0234dd484a54313, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 17:00:46,245 - INFO - Commentaire pour ID 0816d817510a4f36b0234dd484a54313, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 17:00:46,567 - INFO - Commentaire pour ID 0816d817510a4f36b0234dd484a54313, variable A10_Lien_CM, membres_menage__id 3, roster_vector [2]
+2025-05-06 17:00:46,842 - INFO - Commentaire pour ID 101101cb33f741318f5ffb5d4817838a, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 17:00:47,088 - INFO - Commentaire pour ID 101101cb33f741318f5ffb5d4817838a, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 17:00:47,364 - INFO - Commentaire pour ID 101101cb33f741318f5ffb5d4817838a, variable A10_Lien_CM, membres_menage__id 3, roster_vector [2]
+2025-05-06 17:00:47,667 - INFO - Commentaire pour ID 1f7bcaae3c7b44f5aac7d1709460105a, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 17:00:47,932 - INFO - Commentaire pour ID 1f7bcaae3c7b44f5aac7d1709460105a, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 17:00:48,197 - INFO - Commentaire pour ID 1f7bcaae3c7b44f5aac7d1709460105a, variable A10_Lien_CM, membres_menage__id 3, roster_vector [2]
+2025-05-06 17:00:48,467 - INFO - Commentaire pour ID 1f7bcaae3c7b44f5aac7d1709460105a, variable A10_Lien_CM, membres_menage__id 4, roster_vector [3]
+2025-05-06 17:00:48,734 - INFO - Commentaire pour ID 1f7bcaae3c7b44f5aac7d1709460105a, variable A10_Lien_CM, membres_menage__id 5, roster_vector [4]
+2025-05-06 17:00:49,001 - INFO - Commentaire pour ID 1f7bcaae3c7b44f5aac7d1709460105a, variable A10_Lien_CM, membres_menage__id 6, roster_vector [5]
+2025-05-06 17:00:49,292 - INFO - Commentaire pour ID 1f7bcaae3c7b44f5aac7d1709460105a, variable A10_Lien_CM, membres_menage__id 7, roster_vector [6]
+2025-05-06 17:00:49,557 - INFO - Commentaire pour ID 1f7bcaae3c7b44f5aac7d1709460105a, variable A10_Lien_CM, membres_menage__id 8, roster_vector [7]
+2025-05-06 17:00:49,838 - INFO - Commentaire pour ID 396e56edea424825ac59a8fad046e261, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 17:00:50,175 - INFO - Commentaire pour ID 4043d671d6ae492f926d34769760399b, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 17:00:50,439 - INFO - Commentaire pour ID 4043d671d6ae492f926d34769760399b, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 17:00:50,721 - INFO - Commentaire pour ID 4043d671d6ae492f926d34769760399b, variable A10_Lien_CM, membres_menage__id 3, roster_vector [2]
+2025-05-06 17:00:50,999 - INFO - Commentaire pour ID 4164dd5b7fa44654bfbc8afd45ae516a, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 17:00:51,263 - INFO - Commentaire pour ID 4164dd5b7fa44654bfbc8afd45ae516a, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 17:00:51,545 - INFO - Commentaire pour ID 4164dd5b7fa44654bfbc8afd45ae516a, variable A10_Lien_CM, membres_menage__id 3, roster_vector [2]
+2025-05-06 17:00:51,814 - INFO - Commentaire pour ID 4164dd5b7fa44654bfbc8afd45ae516a, variable A10_Lien_CM, membres_menage__id 4, roster_vector [3]
+2025-05-06 17:00:52,075 - INFO - Commentaire pour ID 63aee8332563490289255bbe42f5897c, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 17:00:52,331 - INFO - Commentaire pour ID 63aee8332563490289255bbe42f5897c, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 17:00:52,614 - INFO - Commentaire pour ID 63aee8332563490289255bbe42f5897c, variable A10_Lien_CM, membres_menage__id 3, roster_vector [2]
+2025-05-06 17:00:52,884 - INFO - Commentaire pour ID 671ec2c1d62b447081a479b22aa6cc85, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 17:00:53,152 - INFO - Commentaire pour ID 671ec2c1d62b447081a479b22aa6cc85, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 17:00:53,430 - INFO - Commentaire pour ID 671ec2c1d62b447081a479b22aa6cc85, variable A10_Lien_CM, membres_menage__id 3, roster_vector [2]
+2025-05-06 17:00:53,703 - INFO - Commentaire pour ID 671ec2c1d62b447081a479b22aa6cc85, variable A10_Lien_CM, membres_menage__id 4, roster_vector [3]
+2025-05-06 17:00:53,963 - INFO - Commentaire pour ID 671ec2c1d62b447081a479b22aa6cc85, variable A10_Lien_CM, membres_menage__id 5, roster_vector [4]
+2025-05-06 17:00:54,226 - INFO - Commentaire pour ID 671ec2c1d62b447081a479b22aa6cc85, variable A10_Lien_CM, membres_menage__id 6, roster_vector [5]
+2025-05-06 17:00:54,507 - INFO - Commentaire pour ID 671ec2c1d62b447081a479b22aa6cc85, variable A10_Lien_CM, membres_menage__id 7, roster_vector [6]
+2025-05-06 17:00:54,803 - INFO - Commentaire pour ID 671ec2c1d62b447081a479b22aa6cc85, variable A10_Lien_CM, membres_menage__id 8, roster_vector [7]
+2025-05-06 17:00:55,087 - INFO - Commentaire pour ID a37555478cd24828a978d8ab9a819e96, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 17:00:55,354 - INFO - Commentaire pour ID a37555478cd24828a978d8ab9a819e96, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 17:00:55,620 - INFO - Commentaire pour ID a37555478cd24828a978d8ab9a819e96, variable A10_Lien_CM, membres_menage__id 3, roster_vector [2]
+2025-05-06 17:00:55,899 - INFO - Commentaire pour ID acfbfd212040440ca2d18d768654bf5f, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 17:00:56,184 - INFO - Commentaire pour ID acfbfd212040440ca2d18d768654bf5f, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 17:00:56,444 - INFO - Commentaire pour ID acfbfd212040440ca2d18d768654bf5f, variable A10_Lien_CM, membres_menage__id 3, roster_vector [2]
+2025-05-06 17:00:56,711 - INFO - Commentaire pour ID acfbfd212040440ca2d18d768654bf5f, variable A10_Lien_CM, membres_menage__id 4, roster_vector [3]
+2025-05-06 17:00:56,979 - INFO - Commentaire pour ID b32e51b264a948d7a0467fca8f99339a, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 17:00:57,247 - INFO - Commentaire pour ID b32e51b264a948d7a0467fca8f99339a, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 17:00:57,525 - INFO - Commentaire pour ID b32e51b264a948d7a0467fca8f99339a, variable A10_Lien_CM, membres_menage__id 3, roster_vector [2]
+2025-05-06 17:00:57,811 - INFO - Commentaire pour ID b32e51b264a948d7a0467fca8f99339a, variable A10_Lien_CM, membres_menage__id 4, roster_vector [3]
+2025-05-06 17:00:58,075 - INFO - Commentaire pour ID b32e51b264a948d7a0467fca8f99339a, variable A10_Lien_CM, membres_menage__id 5, roster_vector [4]
+2025-05-06 17:00:58,337 - INFO - Commentaire pour ID c3db43cf0b24440abd13ab04d6a02321, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 17:00:58,610 - INFO - Commentaire pour ID c3db43cf0b24440abd13ab04d6a02321, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 17:00:58,882 - INFO - Commentaire pour ID c3db43cf0b24440abd13ab04d6a02321, variable A10_Lien_CM, membres_menage__id 3, roster_vector [2]
+2025-05-06 17:00:59,150 - INFO - Commentaire pour ID c3db43cf0b24440abd13ab04d6a02321, variable A10_Lien_CM, membres_menage__id 4, roster_vector [3]
+2025-05-06 17:00:59,483 - INFO - Commentaire pour ID c3db43cf0b24440abd13ab04d6a02321, variable A10_Lien_CM, membres_menage__id 5, roster_vector [4]
+2025-05-06 17:00:59,822 - INFO - Commentaire pour ID c3db43cf0b24440abd13ab04d6a02321, variable A10_Lien_CM, membres_menage__id 6, roster_vector [5]
+2025-05-06 17:01:00,128 - INFO - Commentaire pour ID c3db43cf0b24440abd13ab04d6a02321, variable A10_Lien_CM, membres_menage__id 7, roster_vector [6]
+2025-05-06 17:01:00,430 - INFO - Commentaire pour ID db00001104b14ed8864f7266bc697238, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 17:01:00,699 - INFO - Commentaire pour ID db00001104b14ed8864f7266bc697238, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 17:01:01,050 - INFO - Commentaire pour ID db00001104b14ed8864f7266bc697238, variable A10_Lien_CM, membres_menage__id 3, roster_vector [2]
+2025-05-06 17:01:01,356 - INFO - Commentaire pour ID db00001104b14ed8864f7266bc697238, variable A10_Lien_CM, membres_menage__id 4, roster_vector [3]
+2025-05-06 17:01:01,717 - INFO - Commentaire pour ID db00001104b14ed8864f7266bc697238, variable A10_Lien_CM, membres_menage__id 5, roster_vector [4]
+2025-05-06 17:01:02,023 - INFO - Commentaire pour ID de3944a6e06840d19c9c03456546b967, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 17:01:02,380 - INFO - Commentaire pour ID de3944a6e06840d19c9c03456546b967, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 17:01:02,690 - INFO - Commentaire pour ID efd6cd07ffad4f37a3bfd4ec840ed43d, variable A10_Lien_CM, membres_menage__id 1, roster_vector [0]
+2025-05-06 17:01:02,995 - INFO - Commentaire pour ID efd6cd07ffad4f37a3bfd4ec840ed43d, variable A10_Lien_CM, membres_menage__id 2, roster_vector [1]
+2025-05-06 17:01:03,303 - INFO - Commentaire pour ID efd6cd07ffad4f37a3bfd4ec840ed43d, variable A10_Lien_CM, membres_menage__id 3, roster_vector [2]
+2025-05-06 17:01:03,610 - INFO - Commentaire pour ID efd6cd07ffad4f37a3bfd4ec840ed43d, variable A10_Lien_CM, membres_menage__id 4, roster_vector [3]
+2025-05-06 17:01:03,917 - INFO - Commentaire pour ID efd6cd07ffad4f37a3bfd4ec840ed43d, variable A10_Lien_CM, membres_menage__id 5, roster_vector [4]
+2025-05-06 17:01:04,215 - INFO - Commentaire pour ID efd6cd07ffad4f37a3bfd4ec840ed43d, variable A10_Lien_CM, membres_menage__id 6, roster_vector [5]
+2025-05-06 17:01:04,526 - INFO - Commentaire pour ID efd6cd07ffad4f37a3bfd4ec840ed43d, variable A10_Lien_CM, membres_menage__id 7, roster_vector [6]
+2025-05-06 17:01:04,838 - INFO - Commentaire pour ID efd6cd07ffad4f37a3bfd4ec840ed43d, variable A10_Lien_CM, membres_menage__id 8, roster_vector [7]
+2025-05-06 17:01:10,020 - INFO - 127.0.0.1 - - [06/May/2025 17:01:10] "POST / HTTP/1.1" 200 -
+2025-05-07 10:06:28,381 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-07 10:06:28,956 - INFO -  * Restarting with stat
+2025-05-09 07:45:19,965 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-09 07:45:19,966 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-09 07:45:43,816 - INFO - 127.0.0.1 - - [09/May/2025 07:45:43] "GET / HTTP/1.1" 200 -
+2025-05-09 07:45:44,334 - INFO - 127.0.0.1 - - [09/May/2025 07:45:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-09 07:48:54,166 - ERROR - Exception on /save_api_info [POST]
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\app.py", line 168, in save_api_info
+    workspace_names = [ws.name for ws in workspaces]
+                                         ^^^^^^^^^^
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\venv\Lib\site-packages\ssaw\workspaces.py", line 35, in get_list
+    r = WorkspacesList.parse_obj(self._make_call('get', path, params=params))
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\venv\Lib\site-packages\ssaw\base.py", line 40, in _make_call
+    self._process_status_code(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\venv\Lib\site-packages\ssaw\base.py", line 132, in _process_status_code
+    raise UnauthorizedError()
+ssaw.exceptions.UnauthorizedError: Either username or password were not provided or wrong
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\app.py", line 179, in save_api_info
+    except ssaw.exceptions.SsawException as e:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'ssaw.exceptions' has no attribute 'SsawException'
+2025-05-09 07:48:54,182 - INFO - 127.0.0.1 - - [09/May/2025 07:48:54] "[35m[1mPOST /save_api_info HTTP/1.1[0m" 500 -
+2025-05-09 07:49:18,414 - INFO - 127.0.0.1 - - [09/May/2025 07:49:18] "[32mPOST /save_api_info HTTP/1.1[0m" 302 -
+2025-05-09 07:49:19,305 - INFO - 127.0.0.1 - - [09/May/2025 07:49:19] "GET / HTTP/1.1" 200 -
+2025-05-09 07:49:36,736 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1)
+2025-05-09 07:49:41,652 - INFO - Téléchargement réussi : C:\Users\DELL\AppData\Local\Temp\tmp4e7bverm.zip
+2025-05-09 07:49:41,742 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmp4e7bverm.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmp4e7bverm.zip'
+2025-05-09 07:49:41,744 - INFO - 127.0.0.1 - - [09/May/2025 07:49:41] "POST /download HTTP/1.1" 200 -
+2025-05-09 08:02:57,137 - INFO - 127.0.0.1 - - [09/May/2025 08:02:57] "GET / HTTP/1.1" 200 -
+2025-05-09 08:03:01,581 - INFO - 127.0.0.1 - - [09/May/2025 08:03:01] "GET / HTTP/1.1" 200 -
+2025-05-09 08:03:13,320 - ERROR - Exception on /save_api_info [POST]
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\app.py", line 168, in save_api_info
+    return render_template('api_config.html', form_data=form_data)
+                                     ^^^^^^^^^^
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\venv\Lib\site-packages\ssaw\workspaces.py", line 35, in get_list
+    r = WorkspacesList.parse_obj(self._make_call('get', path, params=params))
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\venv\Lib\site-packages\ssaw\base.py", line 40, in _make_call
+    self._process_status_code(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\venv\Lib\site-packages\ssaw\base.py", line 132, in _process_status_code
+    raise UnauthorizedError()
+ssaw.exceptions.UnauthorizedError: Either username or password were not provided or wrong
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\DELL\OneDrive - GOUVCI\GOMBO\Maurice\rejet_survey_solutions\app.py", line 179, in save_api_info
+    """Handle the download request for Survey Solutions data and send the file to the browser."""
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'ssaw.exceptions' has no attribute 'SsawException'
+2025-05-09 08:03:13,382 - INFO - 127.0.0.1 - - [09/May/2025 08:03:13] "[35m[1mPOST /save_api_info HTTP/1.1[0m" 500 -
+2025-05-09 08:03:19,059 - INFO - 127.0.0.1 - - [09/May/2025 08:03:19] "[31m[1mGET /save_api_info HTTP/1.1[0m" 405 -
+2025-05-09 08:03:25,452 - INFO - 127.0.0.1 - - [09/May/2025 08:03:25] "[31m[1mGET /save_api_info HTTP/1.1[0m" 405 -
+2025-05-09 08:03:41,445 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-09 08:03:41,445 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-09 08:03:41,449 - INFO -  * Restarting with stat
+2025-05-09 08:03:43,140 - WARNING -  * Debugger is active!
+2025-05-09 08:03:43,171 - INFO -  * Debugger PIN: 140-286-537
+2025-05-09 08:04:39,983 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-09 08:04:40,197 - INFO -  * Restarting with stat
+2025-05-09 08:04:42,105 - WARNING -  * Debugger is active!
+2025-05-09 08:04:42,112 - INFO -  * Debugger PIN: 140-286-537
+2025-05-09 08:04:44,509 - INFO - 127.0.0.1 - - [09/May/2025 08:04:44] "[33mGET /save_api_info HTTP/1.1[0m" 404 -
+2025-05-09 08:06:14,272 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-09 08:06:14,470 - INFO -  * Restarting with stat
+2025-05-09 08:06:16,379 - WARNING -  * Debugger is active!
+2025-05-09 08:06:16,383 - INFO -  * Debugger PIN: 140-286-537
+2025-05-09 08:06:27,440 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+2025-05-09 08:06:27,440 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-09 08:06:27,442 - INFO -  * Restarting with stat
+2025-05-09 08:06:29,197 - WARNING -  * Debugger is active!
+2025-05-09 08:06:29,200 - INFO -  * Debugger PIN: 140-286-537
+2025-05-09 08:07:13,149 - INFO - 127.0.0.1 - - [09/May/2025 08:07:13] "[32mGET / HTTP/1.1[0m" 302 -
+2025-05-09 08:07:13,218 - INFO - 127.0.0.1 - - [09/May/2025 08:07:13] "GET /api_config HTTP/1.1" 200 -
+2025-05-09 08:07:13,654 - INFO - 127.0.0.1 - - [09/May/2025 08:07:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-09 08:07:45,441 - INFO - 127.0.0.1 - - [09/May/2025 08:07:45] "[32mGET / HTTP/1.1[0m" 302 -
+2025-05-09 08:07:45,472 - INFO - 127.0.0.1 - - [09/May/2025 08:07:45] "GET /api_config HTTP/1.1" 200 -
+2025-05-09 08:08:21,379 - INFO - 127.0.0.1 - - [09/May/2025 08:08:21] "[35m[1mPOST /api_config HTTP/1.1[0m" 500 -
+2025-05-09 08:08:21,541 - INFO - 127.0.0.1 - - [09/May/2025 08:08:21] "GET /api_config?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-09 08:08:21,814 - INFO - 127.0.0.1 - - [09/May/2025 08:08:21] "GET /api_config?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-09 08:08:22,177 - INFO - 127.0.0.1 - - [09/May/2025 08:08:22] "GET /api_config?__debugger__=yes&cmd=resource&f=console.png&s=0Cq9s3RuIzVHzVGa2NrI HTTP/1.1" 200 -
+2025-05-09 08:08:22,434 - INFO - 127.0.0.1 - - [09/May/2025 08:08:22] "GET /api_config?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-09 08:09:54,248 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-09 08:09:54,382 - INFO -  * Restarting with stat
+2025-05-09 08:09:56,270 - WARNING -  * Debugger is active!
+2025-05-09 08:09:56,273 - INFO -  * Debugger PIN: 140-286-537
+2025-05-09 08:10:01,543 - INFO - 127.0.0.1 - - [09/May/2025 08:10:01] "POST /api_config HTTP/1.1" 200 -
+2025-05-09 08:10:11,071 - INFO - 127.0.0.1 - - [09/May/2025 08:10:11] "POST /api_config HTTP/1.1" 200 -
+2025-05-09 08:10:31,375 - INFO - 127.0.0.1 - - [09/May/2025 08:10:31] "[32mPOST /api_config HTTP/1.1[0m" 302 -
+2025-05-09 08:10:32,305 - INFO - 127.0.0.1 - - [09/May/2025 08:10:32] "GET / HTTP/1.1" 200 -
+2025-05-09 08:10:46,645 - INFO - 127.0.0.1 - - [09/May/2025 08:10:46] "GET /api_config HTTP/1.1" 200 -
+2025-05-09 08:10:50,945 - INFO - 127.0.0.1 - - [09/May/2025 08:10:50] "[32mPOST /api_config HTTP/1.1[0m" 302 -
+2025-05-09 08:10:51,803 - INFO - 127.0.0.1 - - [09/May/2025 08:10:51] "GET / HTTP/1.1" 200 -
+2025-05-09 08:10:59,460 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1)
+2025-05-09 08:11:04,815 - INFO - Téléchargement réussi : C:\Users\DELL\AppData\Local\Temp\tmp4dynqz73.zip
+2025-05-09 08:11:04,849 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmp4dynqz73.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmp4dynqz73.zip'
+2025-05-09 08:11:04,850 - INFO - 127.0.0.1 - - [09/May/2025 08:11:04] "POST /download HTTP/1.1" 200 -
+2025-05-09 08:12:09,353 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-09 08:12:09,490 - INFO -  * Restarting with stat
+2025-05-09 08:12:11,187 - WARNING -  * Debugger is active!
+2025-05-09 08:12:11,192 - INFO -  * Debugger PIN: 140-286-537
+2025-05-09 08:15:27,861 - INFO - 127.0.0.1 - - [09/May/2025 08:15:27] "GET / HTTP/1.1" 200 -
+2025-05-09 08:15:33,244 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1)
+2025-05-09 08:15:36,435 - INFO - Téléchargement réussi : C:\Users\DELL\AppData\Local\Temp\tmpw0rh7jpx.zip
+2025-05-09 08:15:36,497 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmpw0rh7jpx.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpw0rh7jpx.zip'
+2025-05-09 08:15:36,500 - INFO - 127.0.0.1 - - [09/May/2025 08:15:36] "POST /download HTTP/1.1" 200 -
+2025-05-09 08:17:18,700 - INFO - 127.0.0.1 - - [09/May/2025 08:17:18] "GET /api_config HTTP/1.1" 200 -
+2025-05-09 08:17:53,323 - INFO - 127.0.0.1 - - [09/May/2025 08:17:53] "GET / HTTP/1.1" 200 -
+2025-05-09 08:18:07,173 - INFO - 127.0.0.1 - - [09/May/2025 08:18:07] "GET / HTTP/1.1" 200 -
+2025-05-09 08:18:16,330 - INFO - 127.0.0.1 - - [09/May/2025 08:18:16] "[32mGET / HTTP/1.1[0m" 302 -
+2025-05-09 08:18:16,341 - INFO - 127.0.0.1 - - [09/May/2025 08:18:16] "GET /api_config HTTP/1.1" 200 -
+2025-05-09 08:18:16,769 - INFO - 127.0.0.1 - - [09/May/2025 08:18:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-09 08:25:56,046 - INFO - 127.0.0.1 - - [09/May/2025 08:25:56] "GET / HTTP/1.1" 200 -
+2025-05-09 08:26:08,756 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1)
+2025-05-09 08:26:13,187 - INFO - Téléchargement réussi : C:\Users\DELL\AppData\Local\Temp\tmpit51r8c6.zip
+2025-05-09 08:26:13,240 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmpit51r8c6.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpit51r8c6.zip'
+2025-05-09 08:26:13,241 - INFO - 127.0.0.1 - - [09/May/2025 08:26:13] "POST /download HTTP/1.1" 200 -
+2025-05-09 08:26:28,150 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1)
+2025-05-09 08:26:31,210 - INFO - Téléchargement réussi : C:\Users\DELL\AppData\Local\Temp\tmpoaqofbjj.zip
+2025-05-09 08:26:31,267 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmpoaqofbjj.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpoaqofbjj.zip'
+2025-05-09 08:26:31,270 - INFO - 127.0.0.1 - - [09/May/2025 08:26:31] "POST /download HTTP/1.1" 200 -
+2025-05-09 08:27:23,533 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1)
+2025-05-09 08:27:26,817 - INFO - Téléchargement réussi : C:\Users\DELL\AppData\Local\Temp\tmp620tmpjy.zip
+2025-05-09 08:27:26,875 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmp620tmpjy.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmp620tmpjy.zip'
+2025-05-09 08:27:26,878 - INFO - 127.0.0.1 - - [09/May/2025 08:27:26] "POST /download HTTP/1.1" 200 -
+2025-05-09 08:29:20,218 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-09 08:29:20,367 - INFO -  * Restarting with stat
+2025-05-09 08:29:22,198 - WARNING -  * Debugger is active!
+2025-05-09 08:29:22,201 - INFO -  * Debugger PIN: 140-286-537
+2025-05-09 08:29:27,434 - INFO - 127.0.0.1 - - [09/May/2025 08:29:27] "GET / HTTP/1.1" 200 -
+2025-05-09 08:29:34,746 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1, Format: SPSS)
+2025-05-09 08:29:37,844 - INFO - Téléchargement réussi : C:\Users\DELL\AppData\Local\Temp\tmpvrxuc8yn.zip
+2025-05-09 08:29:37,941 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmpvrxuc8yn.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpvrxuc8yn.zip'
+2025-05-09 08:29:37,944 - INFO - 127.0.0.1 - - [09/May/2025 08:29:37] "POST /download HTTP/1.1" 200 -
+2025-05-09 08:29:47,823 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1, Format: Tabular)
+2025-05-09 08:29:50,998 - INFO - Téléchargement réussi : C:\Users\DELL\AppData\Local\Temp\tmp0e7r4oeo.zip
+2025-05-09 08:29:51,024 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmp0e7r4oeo.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmp0e7r4oeo.zip'
+2025-05-09 08:29:51,026 - INFO - 127.0.0.1 - - [09/May/2025 08:29:51] "POST /download HTTP/1.1" 200 -
+2025-05-09 08:49:04,773 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-09 08:49:04,940 - INFO -  * Restarting with stat
+2025-05-09 08:49:07,130 - WARNING -  * Debugger is active!
+2025-05-09 08:49:07,133 - INFO -  * Debugger PIN: 140-286-537
+2025-05-09 08:49:14,337 - INFO - 127.0.0.1 - - [09/May/2025 08:49:14] "GET / HTTP/1.1" 200 -
+2025-05-09 08:49:47,313 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1, Format: STATA, Statut: RejectedByHeadquarters)
+2025-05-09 08:49:50,485 - INFO - Téléchargement réussi : C:\Users\DELL\AppData\Local\Temp\tmpc0e73fnk.zip
+2025-05-09 08:49:50,555 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmpc0e73fnk.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpc0e73fnk.zip'
+2025-05-09 08:49:50,558 - INFO - 127.0.0.1 - - [09/May/2025 08:49:50] "POST /download HTTP/1.1" 200 -
+2025-05-09 08:52:10,872 - INFO - Début du téléchargement pour HFC_MENAGE_ENABEL_2024 (ID: 2cbc76a1-a96a-4c07-a6ae-fe56049194d2$1, Format: STATA, Statut: RejectedBySupervisor)
+2025-05-09 08:52:13,963 - INFO - Téléchargement réussi : C:\Users\DELL\AppData\Local\Temp\tmpktfg9gi9.zip
+2025-05-09 08:52:14,040 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmpktfg9gi9.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpktfg9gi9.zip'
+2025-05-09 08:52:14,044 - INFO - 127.0.0.1 - - [09/May/2025 08:52:14] "POST /download HTTP/1.1" 200 -
+2025-05-09 08:55:05,319 - INFO - 127.0.0.1 - - [09/May/2025 08:55:05] "GET / HTTP/1.1" 200 -
