@@ -446,3 +446,57 @@ AttributeError: module 'ssaw.exceptions' has no attribute 'SsawException'
 2025-05-09 08:52:14,040 - ERROR - Erreur lors de la suppression du fichier temporaire C:\Users\DELL\AppData\Local\Temp\tmpktfg9gi9.zip : [WinError 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: 'C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpktfg9gi9.zip'
 2025-05-09 08:52:14,044 - INFO - 127.0.0.1 - - [09/May/2025 08:52:14] "POST /download HTTP/1.1" 200 -
 2025-05-09 08:55:05,319 - INFO - 127.0.0.1 - - [09/May/2025 08:55:05] "GET / HTTP/1.1" 200 -
+2025-05-09 11:04:46,202 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+2025-05-09 11:04:46,202 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-09 11:04:46,205 - INFO -  * Restarting with stat
+2025-05-09 11:04:48,370 - WARNING -  * Debugger is active!
+2025-05-09 11:04:48,381 - INFO -  * Debugger PIN: 140-286-537
+2025-05-09 11:04:51,058 - INFO - 127.0.0.1 - - [09/May/2025 11:04:51] "GET / HTTP/1.1" 200 -
+2025-05-09 11:04:55,283 - INFO - 127.0.0.1 - - [09/May/2025 11:04:55] "GET /stats HTTP/1.1" 200 -
+2025-05-09 11:05:11,975 - INFO - 127.0.0.1 - - [09/May/2025 11:05:11] "POST /stats HTTP/1.1" 200 -
+2025-05-09 11:07:52,624 - INFO - 127.0.0.1 - - [09/May/2025 11:07:52] "POST /stats HTTP/1.1" 200 -
+2025-05-09 11:08:25,890 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-09 11:08:26,091 - INFO -  * Restarting with stat
+2025-05-09 11:08:28,460 - WARNING -  * Debugger is active!
+2025-05-09 11:08:28,465 - INFO -  * Debugger PIN: 140-286-537
+2025-05-09 11:09:22,935 - INFO - 127.0.0.1 - - [09/May/2025 11:09:22] "POST /stats HTTP/1.1" 200 -
+2025-05-09 11:14:55,091 - INFO - 127.0.0.1 - - [09/May/2025 11:14:55] "POST /stats HTTP/1.1" 200 -
+2025-05-09 11:15:13,633 - INFO - 127.0.0.1 - - [09/May/2025 11:15:13] "POST /stats HTTP/1.1" 200 -
+2025-05-09 11:16:14,291 - INFO - 127.0.0.1 - - [09/May/2025 11:16:14] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-09 11:20:14,776 - INFO - 127.0.0.1 - - [09/May/2025 11:20:14] "POST /stats HTTP/1.1" 200 -
+2025-05-09 11:20:14,820 - INFO - 127.0.0.1 - - [09/May/2025 11:20:14] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-09 11:23:12,492 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-09 11:23:12,648 - INFO -  * Restarting with stat
+2025-05-09 11:23:14,579 - WARNING -  * Debugger is active!
+2025-05-09 11:23:14,582 - INFO -  * Debugger PIN: 140-286-537
+2025-05-09 11:23:57,763 - INFO -  * Detected change in 'C:\\Users\\DELL\\OneDrive - GOUVCI\\GOMBO\\Maurice\\rejet_survey_solutions\\app.py', reloading
+2025-05-09 11:23:57,909 - INFO -  * Restarting with stat
+2025-05-09 11:23:59,779 - WARNING -  * Debugger is active!
+2025-05-09 11:23:59,784 - INFO -  * Debugger PIN: 140-286-537
+2025-05-09 11:24:35,077 - INFO - 127.0.0.1 - - [09/May/2025 11:24:35] "POST /stats HTTP/1.1" 200 -
+2025-05-09 11:24:35,117 - INFO - 127.0.0.1 - - [09/May/2025 11:24:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-09 11:25:32,822 - INFO - 127.0.0.1 - - [09/May/2025 11:25:32] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:28:16,480 - INFO - 127.0.0.1 - - [09/May/2025 11:28:16] "POST /stats HTTP/1.1" 200 -
+2025-05-09 11:28:46,244 - INFO - 127.0.0.1 - - [09/May/2025 11:28:46] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:28:52,318 - INFO - 127.0.0.1 - - [09/May/2025 11:28:52] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:30:05,637 - INFO - 127.0.0.1 - - [09/May/2025 11:30:05] "POST /stats HTTP/1.1" 200 -
+2025-05-09 11:31:25,500 - INFO - 127.0.0.1 - - [09/May/2025 11:31:25] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:32:12,614 - INFO - 127.0.0.1 - - [09/May/2025 11:32:12] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:33:17,026 - INFO - 127.0.0.1 - - [09/May/2025 11:33:17] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:35:02,764 - INFO - 127.0.0.1 - - [09/May/2025 11:35:02] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:35:17,571 - INFO - 127.0.0.1 - - [09/May/2025 11:35:17] "[35m[1mPOST /stats/process HTTP/1.1[0m" 500 -
+2025-05-09 11:35:23,325 - INFO - 127.0.0.1 - - [09/May/2025 11:35:23] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:36:10,057 - INFO - 127.0.0.1 - - [09/May/2025 11:36:10] "POST /stats HTTP/1.1" 200 -
+2025-05-09 11:37:07,060 - INFO - 127.0.0.1 - - [09/May/2025 11:37:07] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:37:21,926 - INFO - 127.0.0.1 - - [09/May/2025 11:37:21] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:37:44,651 - INFO - 127.0.0.1 - - [09/May/2025 11:37:44] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:37:54,412 - INFO - 127.0.0.1 - - [09/May/2025 11:37:54] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:39:26,177 - INFO - 127.0.0.1 - - [09/May/2025 11:39:26] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:39:37,222 - INFO - 127.0.0.1 - - [09/May/2025 11:39:37] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:39:48,747 - INFO - 127.0.0.1 - - [09/May/2025 11:39:48] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:40:09,248 - INFO - 127.0.0.1 - - [09/May/2025 11:40:09] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:40:21,571 - INFO - 127.0.0.1 - - [09/May/2025 11:40:21] "POST /stats/process HTTP/1.1" 200 -
+2025-05-09 11:43:45,965 - INFO - 127.0.0.1 - - [09/May/2025 11:43:45] "[35m[1mPOST /stats/process HTTP/1.1[0m" 500 -
+2025-05-09 11:43:50,396 - INFO - 127.0.0.1 - - [09/May/2025 11:43:50] "[35m[1mPOST /stats/process HTTP/1.1[0m" 500 -
+2025-05-09 11:43:57,506 - INFO - 127.0.0.1 - - [09/May/2025 11:43:57] "POST /stats/process HTTP/1.1" 200 -

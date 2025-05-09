@@ -32,11 +32,15 @@
 
         <!-- Section visible uniquement après connexion réussie -->
         {% if interview_stats and not interview_stats.error %}
-            <!-- Bouton pour modifier la configuration API -->
-            <div class="text-center mb-6">
+            <!-- Boutons de navigation -->
+            <div class="text-center mb-6 flex justify-center space-x-4">
                 <a href="{{ url_for('api_config') }}"
                    class="inline-block bg-gray-200 text-gray-700 py-2 px-4 rounded-lg hover:bg-gray-300 hover:scale-105 transform transition duration-150 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
                     Modifier la configuration API
+                </a>
+                <a href="{{ url_for('stats') }}"
+                   class="inline-block bg-blue-200 text-blue-700 py-2 px-4 rounded-lg hover:bg-blue-300 hover:scale-105 transform transition duration-150 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+                    Requêtes Statistiques
                 </a>
             </div>
 
@@ -141,7 +145,7 @@
                     </div>
                 </form>
 
-                <!-- Bouton d'annulation (visible uniquement si un job est en cours) -->
+                <!-- Bouton d'annulation -->
                 {% if session.get('export_job_id') %}
                     <form method="POST" action="{{ url_for('cancel_export') }}" class="mt-4" id="cancel-form">
                         <button 
@@ -199,7 +203,6 @@
 
     <!-- JavaScript pour l'indicateur de chargement et annulation -->
     <script>
-        // Gestion du téléchargement
         document.getElementById('download-form')?.addEventListener('submit', function() {
             const button = document.getElementById('download-button');
             const progressBar = document.getElementById('progress-bar');
@@ -207,7 +210,6 @@
             button.innerHTML = '<svg class="animate-spin inline-block w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>Téléchargement en cours...';
             progressBar.classList.remove('hidden');
 
-            // Réinitialiser le bouton après 5 secondes
             setTimeout(() => {
                 button.disabled = false;
                 button.innerHTML = 'Télécharger les Données';
@@ -215,7 +217,6 @@
             }, 5000);
         });
 
-        // Gestion de l'annulation
         document.getElementById('cancel-form')?.addEventListener('submit', function(e) {
             e.preventDefault();
             const button = document.getElementById('cancel-button');
@@ -232,7 +233,7 @@
             .then(data => {
                 if (data.success) {
                     alert('Téléchargement annulé avec succès.');
-                    window.location.reload(); // Rafraîchir pour masquer le bouton d'annulation
+                    window.location.reload();
                 } else {
                     alert('Erreur lors de l\'annulation : ' + data.message);
                     button.disabled = false;
@@ -248,7 +249,6 @@
         });
     </script>
 
-    <!-- Inclure Alpine.js pour les animations des messages flash -->
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
 </body>
 </html>

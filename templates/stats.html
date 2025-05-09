@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requêtes Statistiques</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center py-8">
+    <div class="container max-w-5xl mx-auto px-4">
+        <!-- Titre -->
+        <h1 class="text-3xl font-bold text-gray-800 text-center mb-8 bg-gradient-to-r from-blue-500 to-blue-300 text-transparent bg-clip-text">
+            Requêtes Statistiques
+        </h1>
+
+        <!-- Messages flash -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div id="flash-messages" class="mb-6 max-w-2xl mx-auto space-y-2">
+                    {% for category, message in messages %}
+                        <div class="p-4 rounded-lg shadow-sm opacity-0 transition-opacity duration-500 ease-in-out {{
+                            'bg-green-100 text-green-700 border border-green-200' if category == 'success' else
+                            'bg-red-100 text-red-700 border border-red-200' if category == 'error' else
+                            'bg-blue-100 text-blue-700 border border-blue-200' }}"
+                            x-data="{ show: true }" x-init="setTimeout(() => show = false, 5000)" x-show="show" x-transition:leave="transition-opacity duration-500" x-transition:leave-end="opacity-0">
+                            <pre class="text-sm whitespace-pre-wrap">{{ message | safe }}</pre>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <!-- Bouton de retour à la page principale -->
+        <div class="text-center mb-6">
+            <a href="{{ url_for('reject_and_comment') }}"
+               class="inline-block bg-gray-200 text-gray-700 py-2 px-4 rounded-lg hover:bg-gray-300 hover:scale-105 transform transition duration-150 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
+                Retour à la page principale
+            </a>
+        </div>
+
+        <!-- Contenu principal -->
+        <div class="mt-8 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Analyse des Données</h2>
+
+            <!-- Formulaire d'importation -->
+            <div class="mb-6 max-w-md mx-auto">
+                <h3 class="text-lg font-medium text-gray-800 mb-2">Importer un fichier</h3>
+                <p class="text-gray-600 text-sm mb-4">
+                    Chargez un fichier CSV ou Excel pour effectuer des requêtes statistiques.
+                </p>
+                <form method="POST" enctype="multipart/form-data" action="{{ url_for('stats') }}" class="space-y-4">
+                    <div>
+                        <label for="data_file" class="block text-sm font-medium text-gray-600">Fichier CSV ou Excel</label>
+                        <input 
+                            type="file" 
+                            name="data_file" 
+                            id="data_file" 
+                            accept=".csv,.xlsx" 
+                            class="mt-1 block w-full text-sm text-gray-600 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-blue-50 file:text-blue-600 hover:file:bg-blue-100 transition duration-150" 
+                            required
+                        >
+                    </div>
+                    <button 
+                        type="submit" 
+                        class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 hover:scale-105 transform transition duration-150 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
+                    >
+                        Importer
+                    </button>
+                </form>
+            </div>
+
+            <!-- Affichage des colonnes si un fichier est importé -->
+            {% if columns %}
+                <div class="mt-6">
+                    <h3 class="text-lg font-medium text-gray-800 mb-2">Fichier importé : {{ filename }}</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Glissez-déposez les colonnes ci-dessous dans les zones pour créer des tableaux croisés.
+                    </p>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h4 class="text-sm font-medium text-gray-700 mb-2">Colonnes disponibles :</h4>
+                        <ul id="columns-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+                            {% for column in columns %}
+                                <li data-id="{{ column }}" class="bg-blue-100 text-blue-800 text-sm font-medium py-2 px-3 rounded-lg cursor-move hover:bg-blue-200 transition duration-150">
+                                    {{ column }}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Zones pour le glisser-déposer -->
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h4 class="text-sm font-medium text-gray-700 mb-2">Lignes</h4>
+                        <div id="rows-dropzone" class="min-h-[100px] bg-white border border-dashed border-gray-300 rounded-lg p-2">
+                            <p class="text-sm text-gray-500 empty-message">Glissez les colonnes ici pour les lignes</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h4 class="text-sm font-medium text-gray-700 mb-2">Colonnes</h4>
+                        <div id="columns-dropzone" class="min-h-[100px] bg-white border border-dashed border-gray-300 rounded-lg p-2">
+                            <p class="text-sm text-gray-500 empty-message">Glissez les colonnes ici pour les colonnes</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h4 class="text-sm font-medium text-gray-700 mb-2">Filtres</h4>
+                        <div id="filters-dropzone" class="min-h-[100px] bg-white border border-dashed border-gray-300 rounded-lg p-2">
+                            <p class="text-sm text-gray-500 empty-message">Glissez les colonnes ici pour les filtres</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h4 class="text-sm font-medium text-gray-700 mb-2">Valeurs</h4>
+                        <div id="values-dropzone" class="min-h-[100px] bg-white border border-dashed border-gray-300 rounded-lg p-2">
+                            <p class="text-sm text-gray-500 empty-message">Glissez les colonnes ici pour les valeurs (ex. somme, moyenne)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sélection de la fonction d'agrégation -->
+                <div class="mt-6 max-w-md mx-auto">
+                    <label for="aggfunc" class="block text-sm font-medium text-gray-600">Fonction d'agrégation pour les valeurs</label>
+                    <select 
+                        id="aggfunc" 
+                        class="mt-1 block w-full rounded-lg border border-gray-200 bg-gray-50 py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-300 transition duration-150"
+                    >
+                        <option value="count">Compter</option>
+                        <option value="sum">Somme</option>
+                        <option value="mean">Moyenne</option>
+                        <option value="min">Minimum</option>
+                        <option value="max">Maximum</option>
+                    </select>
+                </div>
+
+                <!-- Bouton pour générer le tableau -->
+                <div class="mt-4 text-center">
+                    <button 
+                        id="generate-table" 
+                        class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hover:scale-105 transform transition duration-150 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2"
+                    >
+                        Générer le tableau
+                    </button>
+                </div>
+
+                <!-- Section pour afficher les résultats -->
+                <div id="results" class="mt-6 hidden">
+                    <h3 class="text-lg font-medium text-gray-800 mb-2">Résultats</h3>
+                    <div id="results-table" class="bg-gray-50 p-4 rounded-lg border border-gray-200 overflow-x-auto"></div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- JavaScript pour SortableJS et AJAX -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialiser SortableJS pour chaque zone
+            const dropzones = ['columns-list', 'rows-dropzone', 'columns-dropzone', 'filters-dropzone', 'values-dropzone'];
+            dropzones.forEach(zoneId => {
+                const el = document.getElementById(zoneId);
+                if (el) {
+                    new Sortable(el, {
+                        group: 'shared',
+                        animation: 150,
+                        onAdd: function(evt) {
+                            console.log(`Ajout à ${zoneId}:`, evt.item.getAttribute('data-id'));
+                            const emptyMessage = evt.to.querySelector('.empty-message');
+                            if (emptyMessage) {
+                                emptyMessage.style.display = 'none';
+                            }
+                            updateDropzoneState();
+                        },
+                        onRemove: function(evt) {
+                            console.log(`Retrait de ${zoneId}:`, evt.item.getAttribute('data-id'));
+                            const emptyMessage = evt.from.querySelector('.empty-message');
+                            if (evt.from.children.length === 1 && emptyMessage) {
+                                emptyMessage.style.display = 'block';
+                            }
+                            updateDropzoneState();
+                        },
+                        onSort: function(evt) {
+                            console.log(`Tri dans ${zoneId}:`, evt.item.getAttribute('data-id'));
+                            updateDropzoneState();
+                        }
+                    });
+                }
+            });
+
+            // Mettre à jour l'état des zones
+            function updateDropzoneState() {
+                const state = {
+                    rows: getItems('rows-dropzone'),
+                    columns: getItems('columns-dropzone'),
+                    filters: getItems('filters-dropzone'),
+                    values: getItems('values-dropzone')
+                };
+                console.log('État des zones:', state);
+            }
+
+            // Récupérer les éléments d'une zone
+            function getItems(zoneId) {
+                const zone = document.getElementById(zoneId);
+                return Array.from(zone.querySelectorAll('li')).map(item => item.getAttribute('data-id'));
+            }
+
+            // Gérer le clic sur "Générer le tableau"
+            document.getElementById('generate-table')?.addEventListener('click', function() {
+                const state = {
+                    rows: getItems('rows-dropzone'),
+                    columns: getItems('columns-dropzone'),
+                    filters: getItems('filters-dropzone'),
+                    values: getItems('values-dropzone'),
+                    aggfunc: document.getElementById('aggfunc').value
+                };
+
+                const button = this;
+                button.disabled = true;
+                button.innerHTML = '<svg class="animate-spin inline-block w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>Traitement...';
+
+                fetch('{{ url_for("process_stats") }}', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(state)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    button.disabled = false;
+                    button.innerHTML = 'Générer le tableau';
+
+                    const resultsDiv = document.getElementById('results');
+                    const tableDiv = document.getElementById('results-table');
+                    resultsDiv.classList.remove('hidden');
+
+                    if (data.success) {
+                        // Afficher le tableau croisé
+                        const pivotData = data.data;
+                        const rows = pivotData.index || [];
+                        const cols = pivotData.columns || [];
+                        const values = pivotData.data || [];
+
+                        // Créer un tableau HTML
+                        let tableHtml = '<table class="min-w-full border-collapse border border-gray-200">';
+                        
+                        // En-tête
+                        tableHtml += '<thead><tr><th class="border border-gray-200 px-4 py-2 bg-gray-100"></th>';
+                        cols.forEach(col => {
+                            tableHtml += `<th class="border border-gray-200 px-4 py-2 bg-gray-100">${col}</th>`;
+                        });
+                        tableHtml += '</tr></thead>';
+
+                        // Corps
+                        tableHtml += '<tbody>';
+                        rows.forEach((row, i) => {
+                            tableHtml += `<tr><th class="border border-gray-200 px-4 py-2 bg-gray-100">${row}</th>`;
+                            values[i].forEach(value => {
+                                tableHtml += `<td class="border border-gray-200 px-4 py-2 text-center">${value}</td>`;
+                            });
+                            tableHtml += '</tr>';
+                        });
+                        tableHtml += '</tbody></table>';
+
+                        tableDiv.innerHTML = tableHtml;
+                    } else {
+                        tableDiv.innerHTML = `<p class="text-red-600">${data.message}</p>`;
+                    }
+                })
+                .catch(error => {
+                    button.disabled = false;
+                    button.innerHTML = 'Générer le tableau';
+                    const resultsDiv = document.getElementById('results');
+                    const tableDiv = document.getElementById('results-table');
+                    resultsDiv.classList.remove('hidden');
+                    tableDiv.innerHTML = `<p class="text-red-600">Erreur lors de la génération du tableau : ${error.message}</p>`;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

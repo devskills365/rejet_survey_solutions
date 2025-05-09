@@ -14,6 +14,7 @@ import uuid
 import logging
 import re
 import tempfile
+import numpy as np
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'Uploads'
@@ -136,7 +137,6 @@ def api_config():
         required_fields = ['api_user', 'utilisateur', 'mot_de_passe', 'workspace']
         form_data = {field: request.form.get(field, '').strip() for field in required_fields}
 
-        # Vérifier les champs vides
         for field, value in form_data.items():
             if not value:
                 flash(f"Le champ '{field}' est requis.", 'error')
@@ -173,7 +173,6 @@ def api_config():
             flash(f"Erreur inattendue : {str(e)}. Veuillez réessayer.", 'error')
             return render_template('api_config.html', form_data=form_data)
 
-    # GET request: afficher le formulaire avec les données de session si disponibles
     form_data = session.get('api_info', {})
     return render_template('api_config.html', form_data=form_data)
 
@@ -193,7 +192,6 @@ def download_data():
             workspace=api_info['workspace']
         )
 
-        # Récupérer le format d'exportation et le statut des interviews
         export_type = request.form.get('export_type')
         interview_status = request.form.get('interview_status')
         valid_export_types = ['Tabular', 'STATA', 'SPSS', 'Binary', 'DDI', 'Paradata']
@@ -212,7 +210,6 @@ def download_data():
 
         variable_qx = 'Menage_VF2_ENA2024'
 
-        # Get questionnaires
         questionnaires = []
         q_api = QuestionnairesApi(client)
         for q in q_api.get_list():
@@ -239,7 +236,6 @@ def download_data():
         questionnaire_identity = f"{questionnaire_guid}${version}"
         logging.info(f"Début du téléchargement pour {q_title} (ID: {questionnaire_identity}, Format: {export_type}, Statut: {interview_status})")
 
-        # Create export job
         export_job_params = {
             "QuestionnaireId": questionnaire_identity,
             "ExportType": export_type,
@@ -249,22 +245,17 @@ def download_data():
         export_api = ExportApi(client)
         job = export_api.start(export_job=export_job, wait=True, show_progress=True)
 
-        # Stocker l'ID du job dans la session
         session['export_job_id'] = job.job_id
         session.modified = True
 
         if not (job and job.has_export_file and job.links and job.links.download):
             status = job.status if job else "Inconnu"
             flash(f"Aucun fichier exporté généré pour {q_title} V{version}. Statut : {status}", 'error')
-            logging.error(f"Aucun fichier exporté. Statut : {status}")
-            # Supprimer l'ID du job de la session
             session.pop('export_job_id', None)
             session.modified = True
             return redirect(url_for('reject_and_comment'))
 
-        # Download the file
         url = f"https://evaluation.sindevstat.com/primary/api/v2/export/{job.job_id}/file"
-        # Ajuster le nom du fichier en fonction du format
         extension_map = {
             'STATA': '.dta.zip',
             'SPSS': '.sav.zip',
@@ -289,12 +280,10 @@ def download_data():
         if response.status_code != 200:
             flash(f"Échec du téléchargement pour {q_title} V{version}. Code HTTP : {response.status_code}", 'error')
             logging.error(f"Échec du téléchargement. Code HTTP : {response.status_code}, Réponse : {response.text[:500]}")
-            # Supprimer l'ID du job de la session
             session.pop('export_job_id', None)
             session.modified = True
             return redirect(url_for('reject_and_comment'))
 
-        # Save the file to a temporary NamedTemporaryFile
         with tempfile.NamedTemporaryFile(delete=False, suffix='.zip') as temp_file:
             for chunk in response.iter_content(chunk_size=8192):
                 if chunk:
@@ -303,16 +292,13 @@ def download_data():
             logging.info(f"Téléchargement réussi : {temp_file_path}")
 
         try:
-            # Envoyer le fichier
             response = send_file(
                 temp_file_path,
                 as_attachment=True,
                 download_name=download_name,
                 mimetype='application/zip'
             )
-            # Ajouter un message flash pour confirmer le succès
             flash(f"Téléchargement réussi : {download_name}", 'success')
-            # Supprimer l'ID du job de la session après succès
             session.pop('export_job_id', None)
             session.modified = True
             return response
@@ -362,7 +348,6 @@ def cancel_export():
         export_api.cancel(job_id)
         logging.info(f"Job d'exportation {job_id} annulé avec succès")
         
-        # Supprimer l'ID du job de la session
         session.pop('export_job_id', None)
         session.modified = True
         return jsonify({'success': True, 'message': 'Job d\'exportation annulé avec succès.'})
@@ -375,6 +360,170 @@ def cancel_export():
     except Exception as e:
         logging.error(f"Erreur lors de l'annulation du job {job_id} : {str(e)}")
         return jsonify({'success': False, 'message': f"Erreur lors de l'annulation : {str(e)}"})
+
+@app.route('/stats', methods=['GET', 'POST'])
+def stats():
+    """Page pour les requêtes statistiques avec import de fichier CSV ou Excel."""
+    if 'api_info' not in session:
+        flash("Veuillez configurer les informations API.", 'error')
+        return redirect(url_for('api_config'))
+
+    columns = None
+    filename = None
+
+    if request.method == 'POST':
+        if 'data_file' not in request.files:
+            flash("Aucun fichier sélectionné.", 'error')
+            return redirect(url_for('stats'))
+
+        file = request.files['data_file']
+        if file.filename == '':
+            flash("Aucun fichier sélectionné.", 'error')
+            return redirect(url_for('stats'))
+
+        if file and (file.filename.endswith('.csv') or file.filename.endswith('.xlsx')):
+            try:
+                # Supprimer l'ancien fichier s'il existe
+                if 'stats_file_path' in session and os.path.exists(session['stats_file_path']):
+                    os.remove(session['stats_file_path'])
+                    session.pop('stats_file_path', None)
+
+                filename = secure_filename(file.filename)
+                file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+                file.save(file_path)
+
+                # Lire le fichier
+                if file.filename.endswith('.csv'):
+                    df = pd.read_csv(file_path)
+                else:  # .xlsx
+                    df = pd.read_excel(file_path)
+
+                # Vérifier que le fichier contient des données
+                if df.empty:
+                    flash("Le fichier importé est vide.", 'error')
+                    os.remove(file_path)
+                    return redirect(url_for('stats'))
+
+                # Extraire les colonnes
+                columns = df.columns.tolist()
+
+                # Stocker le chemin du fichier dans la session
+                session['stats_file_path'] = file_path
+                session.modified = True
+                flash(f"Fichier {filename} importé avec succès. {len(columns)} colonnes détectées.", 'success')
+
+            except Exception as e:
+                flash(f"Erreur lors de l'importation du fichier : {str(e)}", 'error')
+                if os.path.exists(file_path):
+                    os.remove(file_path)
+                return redirect(url_for('stats'))
+        else:
+            flash("Veuillez sélectionner un fichier CSV ou Excel (.csv, .xlsx).", 'error')
+            return redirect(url_for('stats'))
+
+    # Si un fichier est déjà importé, charger ses colonnes
+    if 'stats_file_path' in session and os.path.exists(session['stats_file_path']):
+        try:
+            file_path = session['stats_file_path']
+            filename = os.path.basename(file_path)
+            if file_path.endswith('.csv'):
+                df = pd.read_csv(file_path)
+            else:  # .xlsx
+                df = pd.read_excel(file_path)
+            columns = df.columns.tolist()
+        except Exception as e:
+            flash(f"Erreur lors de la lecture du fichier existant : {str(e)}", 'error')
+            session.pop('stats_file_path', None)
+            session.modified = True
+
+    return render_template('stats.html', columns=columns, filename=filename)
+
+
+@app.route('/stats/process', methods=['POST'])
+def process_stats():
+    """Traite les sélections de colonnes pour générer un tableau croisé."""
+    if 'api_info' not in session:
+        return jsonify({'success': False, 'message': 'Veuillez configurer les informations API.'}), 403
+    
+    if 'stats_file_path' not in session or not os.path.exists(session['stats_file_path']):
+        return jsonify({'success': False, 'message': 'Aucun fichier importé. Veuillez importer un fichier CSV ou Excel.'}), 400
+    
+    try:
+        # Récupérer les sélections envoyées via AJAX
+        data = request.get_json()
+        rows = data.get('rows', [])
+        columns = data.get('columns', [])
+        filters = data.get('filters', [])
+        values = data.get('values', [])
+        aggfunc = data.get('aggfunc', 'count')  # Par défaut, compter les occurrences
+        
+        # Lire le fichier
+        file_path = session['stats_file_path']
+        if file_path.endswith('.csv'):
+            df = pd.read_csv(file_path)
+        else:  # .xlsx
+            df = pd.read_excel(file_path)
+        
+        # Vérifier que les colonnes demandées existent
+        all_columns = rows + columns + values + filters
+        missing_columns = [col for col in all_columns if col not in df.columns]
+        if missing_columns:
+            return jsonify({'success': False, 'message': f"Colonnes manquantes dans le fichier : {', '.join(missing_columns)}"}), 400
+        
+        # Appliquer les filtres (simple égalité pour l'instant)
+        filtered_df = df
+        for filter_col in filters:
+            # Exemple : garder les lignes où la colonne de filtre a une valeur non nulle
+            filtered_df = filtered_df[filtered_df[filter_col].notna()]
+        
+        # Générer le tableau croisé
+        if not values:
+            # Si aucune valeur, compter les occurrences
+            if rows or columns:
+                pivot = pd.pivot_table(
+                    filtered_df,
+                    index=rows,
+                    columns=columns,
+                    aggfunc='count',
+                    fill_value=0
+                )
+            else:
+                return jsonify({'success': False, 'message': 'Veuillez sélectionner au moins une ligne ou une colonne.'}), 400
+        else:
+            # Avec valeurs, utiliser l'agrégation spécifiée
+            aggfunc_map = {
+                'count': 'count',
+                'sum': 'sum',
+                'mean': 'mean',
+                'min': 'min',
+                'max': 'max'
+            }
+            if aggfunc not in aggfunc_map:
+                return jsonify({'success': False, 'message': f"Fonction d'agrégation invalide : {aggfunc}"}), 400
+            
+            pivot = pd.pivot_table(
+                filtered_df,
+                index=rows,
+                columns=columns,
+                values=values,
+                aggfunc=aggfunc_map[aggfunc],
+                fill_value=0
+            )
+        
+        # Convertir le tableau croisé en JSON
+        pivot_json = pivot.to_json(orient='split')
+        
+        return jsonify({
+            'success': True,
+            'message': 'Tableau croisé généré avec succès.',
+            'data': json.loads(pivot_json)
+        })
+    
+    except Exception as e:
+        return jsonify({'success': False, 'message': f"Erreur lors du traitement : {str(e)}"}), 500
+    
+
+    
 
 @app.route('/', methods=['GET', 'POST'])
 def reject_and_comment():
