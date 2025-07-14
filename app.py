@@ -50,32 +50,36 @@ def add_comments_and_reject_from_excel(client: Client, df: pd.DataFrame, mapping
     interviews_api = InterviewsApi(client)
 
     for _, row in df.iterrows():
-        readable_id = str(row['interview__id'])
-        variable = str(row['variable'])
-        comment = str(row['comment'])
-        membres_menage__id = int(row['membres_menage__id']) if pd.notna(row.get('membres_menage__id')) else None
-        roster_vector = json.loads(row.get('roster_vector', '[]')) if 'roster_vector' in df.columns else []
+        readable_id = str(row['interview__id']).strip()
+        variable = str(row['variable']).strip()
+        comment = str(row['comment']).strip()
+        server_id = readable_to_server(readable_id, mapping)
+
+        if not server_id:
+            stats['errors'] += 1
+            results.append(f"ID non trouvé dans la liste de correspondance : {readable_id}")
+            continue
 
         try:
-            server_id = readable_to_server(readable_id, mapping)
-            if not server_id:
-                stats['errors'] += 1
-                results.append(f"ID non trouvé dans la liste de correspondance : {readable_id}")
-                continue
+            # Construction du roster vector si applicable
+            roster_vector = None
 
-            roster_name = 'membres_menage'
-            is_roster_variable = variable in ['s3q02', 's3q03', 'A6_Age_Indiv', 'A7_sexe', 'A10_Lien_CM']
+            if '__' in variable:
+                parts = variable.split('__')
+                variable_clean = parts[-1]
+                nested_rosters = parts[:-1]
 
-            if is_roster_variable and membres_menage__id is not None:
-                if membres_menage__id <= 0:
-                    stats['errors'] += 1
-                    results.append(f"membres_menage__id {membres_menage__id} invalide pour ID {readable_id}, variable {variable}")
-                    continue
-                roster_vector = [membres_menage__id - 1]
-                logging.info(f"Commentaire pour ID {readable_id}, variable {variable}, membres_menage__id {membres_menage__id}, roster_vector {roster_vector}")
-            else:
-                roster_vector = None
-                logging.info(f"Commentaire pour ID {readable_id}, variable {variable}, hors roster")
+                vector = []
+                for roster_name in nested_rosters:
+                    column_name = f"{roster_name}__id"
+                    if column_name in df.columns and pd.notna(row[column_name]):
+                        index = int(row[column_name]) - 1
+                        vector.append(index)
+                    else:
+                        raise ValueError(f"Colonne {column_name} manquante pour variable imbriquée {variable}")
+
+                variable = variable_clean
+                roster_vector = vector
 
             interviews_api.comment(
                 interview_id=server_id,
@@ -84,23 +88,24 @@ def add_comments_and_reject_from_excel(client: Client, df: pd.DataFrame, mapping
                 roster_vector=roster_vector
             )
             stats['commented'] += 1
-            results.append(f"Commentaire ajouté pour l'ID {server_id}, variable {variable}, membre {membres_menage__id or 'N/A'}")
+            results.append(f"✔ Commentaire ajouté (ID={server_id}, variable={variable}, vector={roster_vector})")
             interviews_to_reject.add(server_id)
 
         except Exception as e:
             stats['errors'] += 1
-            results.append(f"Erreur lors du commentaire de l'ID {readable_id}, variable {variable} : {str(e)}")
+            results.append(f"❌ Erreur pour l'ID {readable_id}, variable {variable} : {str(e)}")
 
     for server_id in interviews_to_reject:
         try:
             interviews_api.reject(server_id, 'Rejeté après commentaire')
             stats['rejected'] += 1
-            results.append(f"Rejeté : ID serveur ({server_id})")
+            results.append(f"⛔ Rejeté : {server_id}")
         except Exception as e:
             stats['errors'] += 1
-            results.append(f"Erreur lors du rejet de l'ID {server_id} : {str(e)}")
+            results.append(f"Erreur lors du rejet de {server_id} : {str(e)}")
 
     return stats, results
+
 
 def get_interview_stats(client: Client) -> Dict:
     """Récupère les statistiques des interviews (nombre total, statuts, questionnaires)."""
