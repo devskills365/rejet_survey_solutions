@@ -2,10 +2,10 @@ import os
 import ssaw as ss
 
 # Configuration (utilisation des variables d'environnement pour éviter les informations sensibles)
-API_USER = os.environ.get("SSAW_API_USER") or "https://evaluation.sindevstat.com/"
-API_TOKEN = os.environ.get("SSAW_API_TOKEN") or "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3NjMyNGY1YTE1ODc0ZmZiOTljOWNhZmFiYWWAYOUR_TOKEN_HERE"
-UTILISATEUR = os.environ.get("SSAW_UTILISATEUR") or "user"
-MOT_DE_PASSE = os.environ.get("SSAW_MOT_DE_PASSE") or "user_API_password_01"
+API_USER = os.environ.get("SSAW_API_USER") 
+API_TOKEN = os.environ.get("SSAW_API_TOKEN")
+UTILISATEUR = os.environ.get("SSAW_UTILISATEUR") 
+MOT_DE_PASSE = os.environ.get("SSAW_MOT_DE_PASSE") 
 WORKSPACE = os.environ.get("SSAW_WORKSPACE") or "primary"
 
 def test_connexion_ssaw():
